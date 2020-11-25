@@ -3,9 +3,19 @@ title: OS
 type: docs
 ---
 
-## OS
+# OS
 
-# Windows
+***
+</br>
 
-# Linux
+## Windows
+
+***
+</br>
+
+## Linux
+
+***
+</br>
+
 [Gnome](https://www.gnome.org/)

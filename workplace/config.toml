@@ -2,3 +2,4 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "My digital garden"
 theme = "book"
+enableEmoji  = true
