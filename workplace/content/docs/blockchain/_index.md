@@ -17,6 +17,8 @@ Blockchain has been something I have been passionate about for a few years now. 
 [Molloch Dao](https://www.molochdao.com/)  
 [Ethereum Foundation Research Goals](https://hackmd.io/Mt1zHT61RYOMuJ5OKLuHoA?view)  
 [Research Forum](https://ethresear.ch/)  
+[https://www.theblockchainmonitor.com/](Blockchain Monitior Weekly Articles)
+[https://www.youtube.com/watch?v=95_RmIAqRy0](DEFI exploits and smart contract security ~ Video)
 
 ## SideChains
 EVM Side Chains

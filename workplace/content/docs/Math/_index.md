@@ -2,16 +2,25 @@
 title: Math
 weight: 2
 bookToc: true
+katex: true
+
+
 ---
 
 # Math
 
  ## Notes
 
-  $L^p$ Space Metric Space 
-- \(d(x,y) = [|x_1 - y_|]^p + |x_2 - y_2|^P]^(1/p)\) 
+  {{<katex>}} L^p {{</katex>}} Space Metric Space 
+-  {{<katex>}} d(x,y) = [|x_1 - y_|]^p + |x_2 - y_2|^P]^(1/p) {{</katex>}}
 
-- Taxicab Metric -> P = 1
-- Euclidean Metric -> p = 2
+
+ 
+
+
+
+- Taxicab Metric  → P = 1
+- Euclidean Metric  → P = 2
 ## Linear Algebra
+
 
