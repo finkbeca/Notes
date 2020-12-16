@@ -1,4 +1,4 @@
-baseURL = "https://digitalgarden.on.fleek.co/"
+baseURL = "/"
 languageCode = "en-us"
 title = "My digital garden"
 theme = "book"
