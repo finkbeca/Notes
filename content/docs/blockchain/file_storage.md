@@ -4,8 +4,9 @@ weight: 2
 bookToc: true
 ---
 
-# Filecoin & IPFS
-(Slate)[https://slate.host/]
-(Decentralzied Storage Overview)[https://medium.com/bitfwd/what-is-decentralised-storage-ipfs-filecoin-sia-storj-swarm-5509e476995f]
+## Filecoin & IPFS
+[Slate](https://slate.host/)
+[Decentralzied Storage Overview](https://medium.com/bitfwd/what-is-decentralised-storage-ipfs-filecoin-sia-storj-swarm-5509e476995f)
 
-# SSwarm
+## Swarm
+[Documentation](https://swarm-guide.readthedocs.io/en/latest/)
