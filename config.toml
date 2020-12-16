@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://digitalgarden.on.fleek.co/"
 languageCode = "en-us"
 title = "My digital garden"
 theme = "book"
@@ -7,3 +7,4 @@ enableEmoji  = true
 [markup]
 [markup.goldmark.renderer]
   unsafe = true
+  
