@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta name="generator" content="Hugo 0.78.2" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Parameter Generation #  IN zcash the circuit (transaction verifier) is fixed and thus the polynomials for the QSP are fixed which allow the setup to be prreformed only once. Varying in only the input u.
+Zcash zk proofs rely on public parameters which allow users to construct and verify private transactions.
+Must be set up in a set up phase, random numbers are sampled and refered to as toxic waste to construct parameters, this waste must then be destroyed">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Parameter Generation" />
+<meta property="og:description" content="Parameter Generation #  IN zcash the circuit (transaction verifier) is fixed and thus the polynomials for the QSP are fixed which allow the setup to be prreformed only once. Varying in only the input u.
+Zcash zk proofs rely on public parameters which allow users to construct and verify private transactions.
+Must be set up in a set up phase, random numbers are sampled and refered to as toxic waste to construct parameters, this waste must then be destroyed" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/docs/zk_proof/parameter_generation/" />
+
+<title>Parameter Generation | My digital garden</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.134b70e5316650a530cb42e4e8630b2a01d532bebfc0337028211175336e4806.css" integrity="sha256-E0tw5TFmUKUwy0Lk6GMLKgHVMr6/wDNwKCERdTNuSAY=">
+<script defer src="/en.search.min.ffbce586a027738056d9c92efd7e4091181a63e9599e371f942354f05ff8c1d7.js" integrity="sha256-/7zlhqAnc4BW2cku/X5AkRgaY&#43;lZnjcflCNU8F/4wdc="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>My digital garden</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/books/" class="">Books</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/economics/" class="">Economics</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/markdown/" class="">Markdown</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/back-end/" class="">Back-End</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/blockchain/" class="">Blockchain</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/blockchain/dao/" class="">DAOs</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/front-end/" class="">Front-End</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/hardware/" class="">Hardware</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/math/" class="">Math</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/zk_proof/" class="">Zero Knowledge Proofs</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/zk_proof/np/" class="">NP and Complexity-Theoretic Reduction</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/zk_proof/parameter_generation/" class=" active">Parameter Generation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/zk_proof/qsp/" class="">Quadratic Span Program</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/zk_proof/rsa_intermission/" class="">RSA Intermission</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/os/" class="">OS</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Parameter Generation</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#sapling">Sapling</a>
+      <ul>
+        <li><a href="#powers-of-tau">Powers of Tau</a></li>
+        <li><a href="#sapling-mpc">Sapling MPC</a></li>
+      </ul>
+    </li>
+    <li><a href="#overview">Overview</a>
+      <ul>
+        <li><a href="#commitment-phase">Commitment Phase</a></li>
+        <li><a href="#stage-1-power-of-tau">Stage 1/ Power of Tau</a></li>
+        <li><a href="#stage-2">Stage 2</a></li>
+        <li><a href="#stage-3">Stage 3</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="parameter-generation">
+  Parameter Generation
+  <a class="anchor" href="#parameter-generation">#</a>
+</h1>
+<p>IN zcash the circuit (transaction verifier) is fixed and thus the polynomials for the QSP are fixed which allow the setup to be prreformed only once. Varying in only the input u.</p>
+<p>Zcash zk proofs rely on public parameters which allow users to construct and verify private transactions.</p>
+<p>Must be set up in a set up phase, random numbers are sampled and refered to as toxic waste to construct parameters, this waste must then be destroyed</p>
+<p>Multi-party computation ceremonies ensure that toxic waste does not come into existence through multiple step independent parties construction of a ceremony. For the final parameter to be compromised all the participants would have to be compromised.</p>
+<h2 id="sapling">
+  Sapling
+  <a class="anchor" href="#sapling">#</a>
+</h2>
+<p>Zcash second set of public parameters</p>
+<h3 id="powers-of-tau">
+  Powers of Tau
+  <a class="anchor" href="#powers-of-tau">#</a>
+</h3>
+<p>A multi-party computation ceremony which reached its conclusion in early 2018, coordinated through a public mailing list</p>
+<h3 id="sapling-mpc">
+  Sapling MPC
+  <a class="anchor" href="#sapling-mpc">#</a>
+</h3>
+<p>The Zcash Company hosted MPC for the final parameter construction.over 90 contributions were completed and the final parameter was included in the 2.0.0 release</p>
+<h2 id="overview">
+  Overview
+  <a class="anchor" href="#overview">#</a>
+</h2>
+<p>All participants play a similiar role having their machines randomly sample a part of the toxic waste and this part or shard to perform computations. COmmunication takes place during this period and is not seen as sensitive. However they do no communicate directly but through a coordinated server that acts as a bridge.</p>
+<h3 id="commitment-phase">
+  Commitment Phase
+  <a class="anchor" href="#commitment-phase">#</a>
+</h3>
+<p>Each node randomly generate their shard of the toxic waste providing random text to provide additional entropy to the Linux RNG machine. A  special key is then consturcted to verify the evaluation and bind participants.</p>
+<h3 id="stage-1-power-of-tau">
+  Stage 1/ Power of Tau
+  <a class="anchor" href="#stage-1-power-of-tau">#</a>
+</h3>
+<p>The coordination initializes the initial state and each participant performs a transformation on this state which is passed to the next participant.</p>
+<h3 id="stage-2">
+  Stage 2
+  <a class="anchor" href="#stage-2">#</a>
+</h3>
+<p>Similar to Stage 1 but more complex and takes much longer for each participant to complete their role.</p>
+<h3 id="stage-3">
+  Stage 3
+  <a class="anchor" href="#stage-3">#</a>
+</h3>
+<p>Similar but less expensive computations and faster then either previous stage.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#sapling">Sapling</a>
+      <ul>
+        <li><a href="#powers-of-tau">Powers of Tau</a></li>
+        <li><a href="#sapling-mpc">Sapling MPC</a></li>
+      </ul>
+    </li>
+    <li><a href="#overview">Overview</a>
+      <ul>
+        <li><a href="#commitment-phase">Commitment Phase</a></li>
+        <li><a href="#stage-1-power-of-tau">Stage 1/ Power of Tau</a></li>
+        <li><a href="#stage-2">Stage 2</a></li>
+        <li><a href="#stage-3">Stage 3</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

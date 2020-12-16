@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta name="generator" content="Hugo 0.78.2" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="RSA Intermission #  a &#43; b = c (mod n) == (a&#43;b) mod n = c mod n
+Prover comes up with
+p,q two random secret primes
+n := pq
+d: random number such that 1 &lt; d &lt; n-1
+e: a number such that de congruent 1 (mod (p-1)(q-1))
+c^d = (m^e % n)^d = m^(ed) mod n
+RSA is multipliacateively homorphic. Two operations are homomorphic if you can exchange their order without affect the result.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="RSA Intermission" />
+<meta property="og:description" content="RSA Intermission #  a &#43; b = c (mod n) == (a&#43;b) mod n = c mod n
+Prover comes up with
+p,q two random secret primes
+n := pq
+d: random number such that 1 &lt; d &lt; n-1
+e: a number such that de congruent 1 (mod (p-1)(q-1))
+c^d = (m^e % n)^d = m^(ed) mod n
+RSA is multipliacateively homorphic. Two operations are homomorphic if you can exchange their order without affect the result." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/docs/zk_proof/rsa_intermission/" />
+
+<title>RSA Intermission | My digital garden</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.134b70e5316650a530cb42e4e8630b2a01d532bebfc0337028211175336e4806.css" integrity="sha256-E0tw5TFmUKUwy0Lk6GMLKgHVMr6/wDNwKCERdTNuSAY=">
+<script defer src="/en.search.min.ffbce586a027738056d9c92efd7e4091181a63e9599e371f942354f05ff8c1d7.js" integrity="sha256-/7zlhqAnc4BW2cku/X5AkRgaY&#43;lZnjcflCNU8F/4wdc="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>My digital garden</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/books/" class="">Books</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/economics/" class="">Economics</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/markdown/" class="">Markdown</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/back-end/" class="">Back-End</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/blockchain/" class="">Blockchain</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/blockchain/dao/" class="">DAOs</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/front-end/" class="">Front-End</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/hardware/" class="">Hardware</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/math/" class="">Math</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/zk_proof/" class="">Zero Knowledge Proofs</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/zk_proof/np/" class="">NP and Complexity-Theoretic Reduction</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/zk_proof/parameter_generation/" class="">Parameter Generation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/zk_proof/qsp/" class="">Quadratic Span Program</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/zk_proof/rsa_intermission/" class=" active">RSA Intermission</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/os/" class="">OS</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>RSA Intermission</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents"></nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="rsa-intermission">
+  RSA Intermission
+  <a class="anchor" href="#rsa-intermission">#</a>
+</h1>
+<p>a + b = c (mod n) == (a+b) mod n = c mod n</p>
+<p>Prover comes up with</p>
+<p>p,q two random secret primes</p>
+<p>n := pq</p>
+<p>d: random number such that 1 &lt; d &lt; n-1</p>
+<p>e: a number such that de congruent 1 (mod (p-1)(q-1))</p>
+<p>c^d =  (m^e % n)^d = m^(ed) mod n</p>
+<p>RSA is multipliacateively homorphic. Two operations are homomorphic if you can exchange their order without affect the result.</p>
+<p>Thus the product of the encryption of the two messages is equal to the encryption of the product of the messages</p>
+<p>The prover knows some secret numbers x and y and computers their product but only sends the encryption version such that a=E(x), b = E(y), and c = E(x,y) to the verifier. The verifier now checks that (a b) % n congruent c % n and the only thing learned is the encrypted version of the product and its correctness</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents"></nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

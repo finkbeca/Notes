@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introduction on My digital garden</title>
+    <link>http://example.org/</link>
+    <description>Recent content in Introduction on My digital garden</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DAOs</title>
+      <link>http://example.org/docs/blockchain/dao/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/blockchain/dao/</guid>
+      <description>DAOs #  Created: Aug 18, 2020 6:32 PM
+ DAO Canvas (Business Plan to determine how a DAO should be made)  Note: We want to make a for profit DAO this relies on taxing or some form of monetization to people in or not in the DAO who are using a service provided by the DAO, this could be a tool, knowledge, etc.
+  For Profit relies on funding coming in to the DAO and to a central bank where it then distributed or kept by the DAO</description>
+    </item>
+    
+    <item>
+      <title>NP and Complexity-Theoretic Reduction</title>
+      <link>http://example.org/docs/zk_proof/np/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/zk_proof/np/</guid>
+      <description>NP and Complexity-Theoretic Reduction #  zkSNARKS only work for specific problems about polynomials.
+Let us a function that only ouputs 0 or 1 is called a problem.
+Measuring the complexity to solve a given function we can measure the machine implementation M of a mathematical function f, ie, count the number of steps it takes to compute f on a specific input x.
+Known as the runtime of M on x.</description>
+    </item>
+    
+    <item>
+      <title>Parameter Generation</title>
+      <link>http://example.org/docs/zk_proof/parameter_generation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/zk_proof/parameter_generation/</guid>
+      <description>Parameter Generation #  IN zcash the circuit (transaction verifier) is fixed and thus the polynomials for the QSP are fixed which allow the setup to be prreformed only once. Varying in only the input u.
+Zcash zk proofs rely on public parameters which allow users to construct and verify private transactions.
+Must be set up in a set up phase, random numbers are sampled and refered to as toxic waste to construct parameters, this waste must then be destroyed</description>
+    </item>
+    
+    <item>
+      <title>Quadratic Span Program</title>
+      <link>http://example.org/docs/zk_proof/qsp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/zk_proof/qsp/</guid>
+      <description>QSP (Quadratic Span Program) #  A Quadratic Span Program consists of a set of polynomials and a task is to a find a linear combination of those that is a multiple of another given polynomial.
+A QSP over a field F for inputs of length n consists of
+ a set of polynomials over the field F a polynomial t over F (target polynomial) an injective function  The task is roughly multiply the polynomials by factors and add them so that the sum , the linear combination is a multiple of t.</description>
+    </item>
+    
+    <item>
+      <title>RSA Intermission</title>
+      <link>http://example.org/docs/zk_proof/rsa_intermission/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/zk_proof/rsa_intermission/</guid>
+      <description>RSA Intermission #  a + b = c (mod n) == (a+b) mod n = c mod n
+Prover comes up with
+p,q two random secret primes
+n := pq
+d: random number such that 1 &amp;lt; d &amp;lt; n-1
+e: a number such that de congruent 1 (mod (p-1)(q-1))
+c^d = (m^e % n)^d = m^(ed) mod n
+RSA is multipliacateively homorphic. Two operations are homomorphic if you can exchange their order without affect the result.</description>
+    </item>
+    
+  </channel>
+</rss>

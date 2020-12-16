@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta name="generator" content="Hugo 0.78.2" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="QSP (Quadratic Span Program) #  A Quadratic Span Program consists of a set of polynomials and a task is to a find a linear combination of those that is a multiple of another given polynomial.
+A QSP over a field F for inputs of length n consists of
+ a set of polynomials over the field F a polynomial t over F (target polynomial) an injective function  The task is roughly multiply the polynomials by factors and add them so that the sum , the linear combination is a multiple of t.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Quadratic Span Program" />
+<meta property="og:description" content="QSP (Quadratic Span Program) #  A Quadratic Span Program consists of a set of polynomials and a task is to a find a linear combination of those that is a multiple of another given polynomial.
+A QSP over a field F for inputs of length n consists of
+ a set of polynomials over the field F a polynomial t over F (target polynomial) an injective function  The task is roughly multiply the polynomials by factors and add them so that the sum , the linear combination is a multiple of t." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/docs/zk_proof/qsp/" />
+
+<title>Quadratic Span Program | My digital garden</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.134b70e5316650a530cb42e4e8630b2a01d532bebfc0337028211175336e4806.css" integrity="sha256-E0tw5TFmUKUwy0Lk6GMLKgHVMr6/wDNwKCERdTNuSAY=">
+<script defer src="/en.search.min.ffbce586a027738056d9c92efd7e4091181a63e9599e371f942354f05ff8c1d7.js" integrity="sha256-/7zlhqAnc4BW2cku/X5AkRgaY&#43;lZnjcflCNU8F/4wdc="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>My digital garden</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/books/" class="">Books</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/economics/" class="">Economics</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/markdown/" class="">Markdown</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/back-end/" class="">Back-End</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/blockchain/" class="">Blockchain</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/blockchain/dao/" class="">DAOs</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/front-end/" class="">Front-End</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/hardware/" class="">Hardware</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/math/" class="">Math</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/zk_proof/" class="">Zero Knowledge Proofs</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/zk_proof/np/" class="">NP and Complexity-Theoretic Reduction</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/zk_proof/parameter_generation/" class="">Parameter Generation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/zk_proof/qsp/" class=" active">Quadratic Span Program</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/zk_proof/rsa_intermission/" class="">RSA Intermission</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/os/" class="">OS</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Quadratic Span Program</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#setup-detail">Setup detail</a></li>
+    <li><a href="#encrypted-evaluation-of-a-polynomial-at-secret-points">Encrypted evaluation of a polynomial at secret points</a></li>
+  </ul>
+</nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="qsp-quadratic-span-program">
+  QSP (Quadratic Span Program)
+  <a class="anchor" href="#qsp-quadratic-span-program">#</a>
+</h1>
+<p>A Quadratic Span Program consists of a set of polynomials and a task is to a find a linear combination of those that is a multiple of another given polynomial.</p>
+<p>A QSP over a field F for inputs of length n consists of</p>
+<ol>
+<li>a set of polynomials over the field F</li>
+<li>a polynomial t over F (target polynomial)</li>
+<li>an injective function</li>
+</ol>
+<p>The task is roughly multiply the polynomials by factors and add them so that the sum , the linear combination is a multiple of t. For each binary input string u the function f restricts the polynomial that can be used.</p>
+<p>The reduction from generic computations or circuits to SQP is the hard part as it has to be done in a efficient way to get it as small as possible.</p>
+<h2 id="setup-detail">
+  Setup detail
+  <a class="anchor" href="#setup-detail">#</a>
+</h2>
+<p>The setup generates the common reference string CRS the verifier chooses a random field element s and encrypts the values of the polynomials at the given point. The verifier uses some specific encryption E and publishes E(v_k(s)) and E(w_k(s)) in the CRS. The CRS also contains several other values which makes the verification more efficient and adds the zk property. The encryption E has certain homeomorphic propertyes that the prover can computer E(v(s)) without knowing v_k(s)</p>
+<h2 id="encrypted-evaluation-of-a-polynomial-at-secret-points">
+  Encrypted evaluation of a polynomial at secret points
+  <a class="anchor" href="#encrypted-evaluation-of-a-polynomial-at-secret-points">#</a>
+</h2>
+<p>Fix a group, typically an elliptic curve and a generator g. (Note that a group element is called a generator if there is a number n st the list 
+<link rel="stylesheet" href="/katex/katex.min.css" />
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>
+  \(g^0 g^1 g^{n-1} \)
+</span>
+contains all elements in the group. The encryption E(x) := g^x.</p>
+<p>The verifier chooses a secret field s and publishes as part of CRS</p>
+<p>E(s^0), E(s^1),&hellip;. E(s^d) is the max degree of all polynomials.</p>
+<p>S then <strong>HAS</strong> to be forgotten</p>
+<p>Using these values, the prover can computer E(f(s) for arbitrary polynomials f wihtout knowing s. Assume our polynomial is <span>
+  \(f(x) = 4x^2 &#43; 2x &#43;4 \)
+</span>
+and we want to computer E(f(s) then we get <span>
+  \( E(f(s)) = E(4s^2 &#43;2s&#43;4) = g^4s^2 &#43;2s &#43;4 = E(s^2)^4* E(s^1)^2 * E(s^0)^4 \)
+</span>
+ which can be computed from CRS</p>
+<p>Another secret field element a is needed and we need to publish <span>
+  \( E(as^0), E(as^1) E(as^d) \)
+</span>
+and a is then destroyed</p>
+<p>A prover publishes A:=E(Fs) and B:= E(af(s) and the verifier has to check that these values match. The verifier does this through a pairing function e. This has to be chosen together without the elliptic curve thus <span>
+  \( e(g^x, g^y) = e(g,g)^(xy)\)
+</span>
+</p>
+<span>
+  \( e(A, g^a) = e(g^f(s), g^a) = e(g, g) ^a f(s) \)
+</span>
+
+<span>
+  \( e(B, g) = e(g^(af(s), g) = e(g,g)^(a,  f(s) \)
+</span>
+
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#setup-detail">Setup detail</a></li>
+    <li><a href="#encrypted-evaluation-of-a-polynomial-at-secret-points">Encrypted evaluation of a polynomial at secret points</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blockchain on My digital garden</title>
+    <link>http://example.org/docs/blockchain/</link>
+    <description>Recent content in Blockchain on My digital garden</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://example.org/docs/blockchain/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DAOs</title>
+      <link>http://example.org/docs/blockchain/dao/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/blockchain/dao/</guid>
+      <description>DAOs #  Created: Aug 18, 2020 6:32 PM
+ DAO Canvas (Business Plan to determine how a DAO should be made)  Note: We want to make a for profit DAO this relies on taxing or some form of monetization to people in or not in the DAO who are using a service provided by the DAO, this could be a tool, knowledge, etc.
+  For Profit relies on funding coming in to the DAO and to a central bank where it then distributed or kept by the DAO</description>
+    </item>
+    
+  </channel>
+</rss>

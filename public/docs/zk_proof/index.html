@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta name="generator" content="Hugo 0.78.2" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Zero Knowledge Proofs #  Zcash is derived from the fact that shielded transactions can be fully encrypted on the blockchain but still verified using ZK-SNARK proofs
+zk-SNARK = Zero Knowledge Succinct Non-Interactive Argument of Knowledge, and refers to a proof construction where possession of a secret key can be verified without any interaction between the prove and verified or revealing any info. i.e: Proves proves to the verified that a statement is true.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Zero Knowledge Proofs" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://example.org/docs/zk_proof/" />
+
+<title>Zero Knowledge Proofs | My digital garden</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.134b70e5316650a530cb42e4e8630b2a01d532bebfc0337028211175336e4806.css" integrity="sha256-E0tw5TFmUKUwy0Lk6GMLKgHVMr6/wDNwKCERdTNuSAY=">
+<script defer src="/en.search.min.ffbce586a027738056d9c92efd7e4091181a63e9599e371f942354f05ff8c1d7.js" integrity="sha256-/7zlhqAnc4BW2cku/X5AkRgaY&#43;lZnjcflCNU8F/4wdc="></script>
+<link rel="alternate" type="application/rss+xml" href="http://example.org/docs/zk_proof/index.xml" title="My digital garden" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>My digital garden</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/books/" class="">Books</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/economics/" class="">Economics</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/markdown/" class="">Markdown</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/back-end/" class="">Back-End</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/blockchain/" class="">Blockchain</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/blockchain/dao/" class="">DAOs</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/front-end/" class="">Front-End</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/hardware/" class="">Hardware</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/math/" class="">Math</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/zk_proof/" class=" active">Zero Knowledge Proofs</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/zk_proof/np/" class="">NP and Complexity-Theoretic Reduction</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/zk_proof/parameter_generation/" class="">Parameter Generation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/zk_proof/qsp/" class="">Quadratic Span Program</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/zk_proof/rsa_intermission/" class="">RSA Intermission</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/os/" class="">OS</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Zero Knowledge Proofs</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#parameter-generation">Parameter Generation</a></li>
+        <li><a href="#overview">Overview</a></li>
+      </ul>
+    </li>
+    <li><a href="#ethereum">Ethereum</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#other">Other</a></li>
+  </ul>
+</nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="zero-knowledge-proofs">
+  Zero Knowledge Proofs
+  <a class="anchor" href="#zero-knowledge-proofs">#</a>
+</h1>
+<p>Zcash is derived from the fact that shielded transactions can be fully encrypted on the blockchain but still verified using ZK-SNARK proofs</p>
+<p>zk-SNARK = Zero Knowledge Succinct Non-Interactive Argument of Knowledge, and refers to a proof construction where possession of a secret key can be verified without any interaction between the prove and verified or revealing any info. i.e: Proves proves to the verified that a statement is true.</p>
+<ul>
+<li>Succint: the sizes of the messages are tiny in comparison to the length of the actual computation</li>
+<li>Non-interactive, there is no or little interaction. For zksnarks there is usually a setup phase and after that a single message from the prover to the verifier. Furthermore, SNARKS often have so called public verifier properties meaning that anyone can verify without interacting anew</li>
+<li>ARguments, the verifier is only protected against computationally limited provers. Provers with enough power can create proofs about wrong statements. I.e computational soundness</li>
+<li>of Knowledge, it is not possible for the prover to consturct a proof without knowing a certain so called witness, (address she wants to spend from, the preimage of hash function, or the path to a certain Merkle-tree node)</li>
+<li>zero-knowdge prefix requires that during the interaction the verifier learns nothing apart from the validity of the statement, especially not the witness string.</li>
+</ul>
+<p>Current efficient non-interactive zk proofs rely on a setup phase where a reference string is shared between users.</p>
+<p>Neither the size of the witness string nor the computational efort require to verify the QSP play any role in verification. This means that SNARK verify complex problems and very simple problems take the same effort</p>
+<p>Public parameters are generated through a parameter generation ceremony.</p>
+<h3 id="parameter-generation">
+  Parameter Generation
+  <a class="anchor" href="#parameter-generation">#</a>
+</h3>
+<p><a href="parameter_generation/">Parameter Generation</a></p>
+<p>Instead of computing 
+<link rel="stylesheet" href="/katex/katex.min.css" />
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>
+  \(v_a w_b \)
+</span>
+and their product a verifier chooses a secret random point s , referred to as toxic waste in zcash, and computes t(S) <span>
+  \(v_k(s)\)
+</span>
+ and <span>
+  \(w_k(S) \)
+</span>
+for all k and from them <span>
+  \(v_a(s) \)
+</span>
+ and  <span>
+  \( w_b(s)  \)
+</span>
+and only <span>
+  \( t(S)h(s) = v_a(s)w_b(s)\)
+</span>
+. A bunch of polynomial additions, multiplications with a scalar and polynomial product can be simplifies to field multiplications and additions.</p>
+<h3 id="overview">
+  Overview
+  <a class="anchor" href="#overview">#</a>
+</h3>
+<p>Computation → Arithmetic Circuit → R1CS → QAp → zk-SNARK</p>
+<p>R1CS = Rank 1 Constraint System and checks that the values are &ldquo;traveling correctly&rdquo;</p>
+<p>Creating shielded transactions in Zcash is one example of zk-SNARKS. But it can be used to verify any relation without disclosing inputs or leaking information.</p>
+<p>4 Main ingredients:</p>
+<p>A). Encoding as a polynomial problem</p>
+<p>The program is converted into a quadratic equation of polynomials</p>
+<span>
+  \(t(x)h(x) = w(x)v(x)\)
+</span>
+
+<p>where the equality holds iff the program is computer correctly. The prover WANTS to convince the verifier that the equality holds.</p>
+<p>B). Succinctness by random sampling</p>
+<p>The verifies chooses a secret evaluation point s to reduce the problem from multiplying polynomials and verifying function equality to multiplication and equality of numbers</p>
+<span>
+  \(t(s)h(s) = w(s)v(s)\)
+</span>
+
+<p>C). Homomorphic encoding/encryption</p>
+<p>An encoding function E is used that has some homomorphic properties that allows the prover to computer E(t(s)), E(h(s)), E(w(s)), E(v(s)) without knowing s. she only knows E(s)</p>
+<p>D). Zero knowledge</p>
+<p>The prover permutes the values E(t(S), E(h(s)), E(w(s)), E(v(S)) by multiplying with a number so that the verifier can still check for the correct structure without knowing the actual value.</p>
+<span>
+  \(t(s)h(s) =w(s)v(s) === t(s)h(s)k = w(s)v(s)k\)
+</span>
+
+<p>For a random secret number k where k not 0 then these two are equivalent. However it is impossible to derive t(s)h(s) or w(s)v(s) with the k</p>
+<p><a href="http://localhost:1313/docs/zk_proof/rsa_intermission/">RSA Intermission</a></p>
+<p><a href="np/">NP and Complexity-Theoretic Reduction</a></p>
+<p><a href="qsp/">QSP Quadratic Span Program</a></p>
+<h2 id="ethereum">
+  Ethereum
+  <a class="anchor" href="#ethereum">#</a>
+</h2>
+<p><img src="Untitled.png" alt="" /></p>
+<h1 id="development">
+  Development
+  <a class="anchor" href="#development">#</a>
+</h1>
+<h2 id="other">
+  Other
+  <a class="anchor" href="#other">#</a>
+</h2>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#parameter-generation">Parameter Generation</a></li>
+        <li><a href="#overview">Overview</a></li>
+      </ul>
+    </li>
+    <li><a href="#ethereum">Ethereum</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#other">Other</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
