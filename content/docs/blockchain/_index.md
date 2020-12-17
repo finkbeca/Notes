@@ -35,8 +35,8 @@ EVM Side Chains
 [Script](https://en.bitcoin.it/wiki/Script) Bitcoin Script  
 [BTC](https://blockgeeks.com/guides/best-bitcoin-script-guide/)  
 ### BSV
-Developer Links for BSV
-[Money Button](https://github.com/moneybutton/bsv) - Developer tools  
+Developer Links for BSV  
+[Money Button](https://github.com/moneybutton/bsv) - Developer tools    
 [Money Button](https://www.moneybutton.com/)  
 [Scrypt](https://github.com/scrypt-sv/bsv)  
 [Uniwriter](https://coingeek.com/unwriter-unveils-bitpic-for-bitcoin-sv-blockchain/) - BSV Developer  

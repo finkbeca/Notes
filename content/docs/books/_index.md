@@ -18,4 +18,6 @@ bookComments: true
 [State and Revolution](https://www.marxists.org/archive/lenin/works/1917/staterev/)  
 [Who Gets What and Why](https://www.goodreads.com/book/show/22749723-who-gets-what-and-why) - Mechanism Design  
 [Radical Market](https://www.goodreads.com/book/show/36515770-radical-markets?from_search=true&from_srp=true&qid=ubQCje5Ufs&rank=1)  
-[Diamond Age](https://www.goodreads.com/book/show/827.The_Diamond_Age)
+[Diamond Age](https://www.goodreads.com/book/show/827.The_Diamond_Age)  
+[Giovani's Room](https://www.goodreads.com/book/show/38462.Giovanni_s_Room)  
+[Reflections, Memories Musings](https://www.goodreads.com/book/show/19610119-reflections-memories-musings)  
