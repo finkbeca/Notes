@@ -7,7 +7,10 @@ math: true
 
 # Zero Knowledge Proofs
 
+## Links
+[ZK Proofs for Children](http://pages.cs.wisc.edu/~mkowalcz/628.pdf)  
 
+## Notes
 Zcash is derived from the fact that shielded transactions can be fully encrypted on the blockchain but still verified using ZK-SNARK proofs
 
 zk-SNARK = Zero Knowledge Succinct Non-Interactive Argument of Knowledge, and refers to a proof construction where possession of a secret key can be verified without any interaction between the prove and verified or revealing any info. i.e: Proves proves to the verified that a statement is true.

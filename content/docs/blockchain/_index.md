@@ -16,11 +16,14 @@ Blockchain has been something I have been passionate about for a few years now. 
 [Lex Dao](https://lexdao.org/#/)  
 [Molloch Dao](https://www.molochdao.com/)  
 [Ethereum Foundation Research Goals](https://hackmd.io/Mt1zHT61RYOMuJ5OKLuHoA?view)  
+[Challenges Ethereum](https://challenges.ethereum.org/)  
+[Ethereum Wishlist](https://esp.ethereum.foundation/en/wishlist/)  
 [Research Forum](https://ethresear.ch/)  
 [Blockchain Monitior Weekly Articles](https://www.theblockchainmonitor.com/)  
 [DEFI exploits and smart contract security ~ Video](https://www.youtube.com/watch?v=95_RmIAqRy0)  
-[Vyper IDE](https://vyper.online/)
-[Vyper by Example](https://vyper.readthedocs.io/en/latest/vyper-by-example.html)  
+[Decentralzied Credit Scoring](https://union.finance/)  
+[Vyper IDE](https://vyper.online/)  
+[Vyper by Example](https://vyper.readthedocs.io/en/latest/vyper-by-example.html)   
 
 ## SideChains
 EVM Side Chains
@@ -42,5 +45,6 @@ Developer Links for BSV
 [Uniwriter](https://coingeek.com/unwriter-unveils-bitpic-for-bitcoin-sv-blockchain/) - BSV Developer  
 
 
-
+## Misc
+[Intro to Verifiable Delay Functions](https://www.youtube.com/watch?v=3hg4GM7UQXA)  
 
