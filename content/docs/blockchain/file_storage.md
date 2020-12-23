@@ -27,23 +27,18 @@ bookToc: true
     - Feed (append and removal)  
     - Documents (store indexed JSON Docs)  
     - Counters  
-
     The database is given an address which can be broken down into 3 parts, the first part tells what protocol is in use, the second part is an IPFS multihash, and the third part is the name.  
-
     Each entry in a database is also signed by who created it. ''' const indentity = db.identity ''' . This identity can then be used within OrbitDb.  
-
     You have access control to whom can write to a database. You can define a set of peers that can write to a database or allow anyone write access to a database. By default it is just the creator of the database 
-
-    Public databases are also supported by adding a * to the write access arary
-
+    Public databases are also supported by adding a * to the write access arary  
     Adding to databases:
     - KeyValue: db.put()
     - Log: db.add()
     - Feed: db.add()
     - Docs: db.put()
     - Counter: db.inc()
-
-    Getting from Databases:
+    <br/>
+    Getting from Databases:  
     - KeyValue: db.get()
     - Log: db.iterator()
     - Feed: db.iterator()
