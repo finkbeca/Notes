@@ -1,0 +1,34 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Economics"
+		},
+		{
+			"path": "../Front-End"
+		},
+		{
+			"path": "../Hardware"
+		},
+		{
+			"path": "../Math"
+		},
+		{
+			"path": "../OS"
+		},
+		{
+			"path": "../ZK_Proof"
+		},
+		{
+			"path": "../blockchain"
+		},
+		{
+			"path": "../books"
+		},
+		{
+			"path": "../markdown"
+		}
+	]
+}
