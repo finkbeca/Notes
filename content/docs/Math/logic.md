@@ -6,6 +6,7 @@ katex: true
 
 
 ---
+Notes from Logic: The Laws of truth  
 
 # Propositional Logic Notes
 
@@ -92,19 +93,19 @@ each of these notions.
 2. If all paths close, the argument is valid  
 3. If a path remains open the argument is invalid. Read off from an open path a scenario in which the premises are turth and the conclusion is false.  
 (Note Path is one branch of the tree)  
-To test whether a proposition a is a tautology:  
+- To test whether a proposition a is a tautology:  
 1. Start with the negation not A  
 2. If all paths close, A is a tautology  
 3. If a path reminas open a is not a tautology. Read off from an open path a scenario in which A if false.   
-To test whether two propositions a and b are equivalent:  
+- To test whether two propositions a and b are equivalent:  
 1. Start the tree with the negate bicondition
 2. If all paths close a and b are equivalent  
 3. If a path remains open a and b are not equivalent . Read off from an open path a scenario where a and b have different truth values.  
-To test whether a proposition is satisfiable  or a contradiction:  
+- To test whether a proposition is satisfiable  or a contradiction:  
 1. Start the tree with the proposition  
 2. If all paths close, the proposition is a contradiction  
 3. If a path remains open, the proposition is satisfiable  
-To test whether a set of propositions is satisfiable:
+- To test whether a set of propositions is satisfiable:
 1. Start the tree with the propositions in the set.
 2. If all paths close the set is unsatisfiable.
 3. If a path remains open, the set is satisfible.
