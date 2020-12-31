@@ -52,7 +52,7 @@ bookToc: true
 [3Box](https://3box.io/) - Shared Backend for Web3 using Ethereum, IPFS, and OrbitDB  
 [3box tutorial](https://github.com/RachBLondon/dapp-store)
 
-## IPFS NOTEs
+## IPFS Notes
 
 ### Files API
 The DAG APi allows you to use  unqiue and primitive data structures offered by IPLD within IPFS.  Its method in js-ipfs takes the format ipfs.dag.someMethod()

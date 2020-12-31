@@ -22,9 +22,17 @@ bookComments: true
 [Diamond Age](https://www.goodreads.com/book/show/827.The_Diamond_Age)  
 [Giovani's Room](https://www.goodreads.com/book/show/38462.Giovanni_s_Room)  
 [Reflections, Memories Musings](https://www.goodreads.com/book/show/19610119-reflections-memories-musings)  
-[Working in public](https://www.goodreads.com/book/show/54140556-working-in-public)
-[Go tell it on the moutain](https://www.goodreads.com/book/show/17143.Go_Tell_It_on_the_Mountain?ac=1&from_search=true&qid=vaGHcBdHRy&rank=1)
-[Inadequate Equilibria](https://www.goodreads.com/book/show/36606376-inadequate-equilibria?ac=1&from_search=true&qid=us4LasRECY&rank=1)
-[Stripe Press Publishing](https://press.stripe.com/)
+[Working in public](https://www.goodreads.com/book/show/54140556-working-in-public)  
+[Go tell it on the moutain](https://www.goodreads.com/book/show/17143.Go_Tell_It_on_the_Mountain?ac=1&from_search=true&qid=vaGHcBdHRy&rank=1)  
+[Inadequate Equilibria](https://www.goodreads.com/book/show/36606376-inadequate-equilibria?ac=1&from_search=true&qid=us4LasRECY&rank=1)  
+[Stripe Press Publishing](https://press.stripe.com/)  
+[Men of Mathematics](https://www.goodreads.com/book/show/66358.Men_of_Mathematics)  
+[Life: A User's Manual](https://www.goodreads.com/book/show/28293.Life)  
+[The Gates of Paradise](https://www.goodreads.com/book/show/13117931-the-gates-of-paradise?from_search=true&from_srp=true&qid=v5TTweTtOP&rank=7) 
+[Not A wake](https://www.goodreads.com/book/show/11701114-not-a-wake?from_search=true&from_srp=true&qid=i3OhVtsmQ8&rank=1) -(Author's Emai (mike@cadaeic.net))  
 
 
+
+## Notes
+[Constrained Writing](https://en.wikipedia.org/wiki/Constrained_writing) 
+[Oulipo](https://en.wikipedia.org/wiki/Oulipo) 
