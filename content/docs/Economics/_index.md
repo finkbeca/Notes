@@ -13,8 +13,17 @@ bookCollapseSection: false
 [Cryptoeconomics](https://www.youtube.com/watch?v=GQR1xjQn5Pg)  
 [Tokenizing Shares](https://medium.com/coinmonks/tokenising-shares-introducing-erc-884-cc491258e413) ERC-884  
 [Time Locked Tokens](https://ethresear.ch/t/time-locked-1-1-tokens-as-rudimentary-pseudo-futures/7958)  
-[ETh-Options Hegic](https://www.hegic.co/)
-[Options Basics](https://hegic.gitbook.io/start/)
+[ETh-Options Hegic](https://www.hegic.co/)  
+[Options Basics](https://hegic.gitbook.io/start/)  
+[London Mathematical Laboratory](http://lml.org.uk/)  
+
+### Blogs
+[TheMoneyIllusion](https://www.themoneyillusion.com/)  
+[Enlightenmenteconomics](http://www.enlightenmenteconomics.com/blog/)  
+[Greg Mankiw](https://gregmankiw.blogspot.com/)  
+[Conversable Economist](https://gregmankiw.blogspot.com/)  
+[Macro Musings](https://gregmankiw.blogspot.com/)  
+
 ***
 </br>
 
