@@ -11,7 +11,7 @@ bookCollapseSection: false
 # Markdown
 
 ## Notes
-
+Note to embed PDF in markdown use "{{< embed-pdf url="./resume.pdf" >}}"
 
 ## Links
 [Markmap](https://markmap.js.org/)  
