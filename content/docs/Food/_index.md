@@ -7,5 +7,5 @@ katex: true
 
 ---
 
-# Notes
+# Food
 [GrimGrains](https://grimgrains.com/site/ao_nori.html)
