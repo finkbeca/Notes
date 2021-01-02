@@ -78,8 +78,3 @@ For a random secret number k where k not 0 then these two are equivalent. Howeve
 ## Ethereum
 
 ![](Untitled.png)
-
-
-# Development
-
-## Other

@@ -8,8 +8,18 @@ katex: true
 ---
 # NEAR Protocol
 ---
-
-[NEAR INFO](https://www.notion.so/dacef897e79c40299a7d49def98c5248)
+## Links
+[Near Protocol](https://github.com/nearprotocol)   
+[Documentation](https://docs.near.org/)  
+[Near Wallet](https://wallet.nearprotocol.com/)  
+[EThereum Rainbow Bridge Github](https://github.com/near/NEPs/pull/38/files#diff-52bcc808874f40c00fc81ed3f3e62422)  
+[Rainbow Bridge](https://github.com/near/rainbow-bridge)  
+[Contracts Development](https://docs.near.org/docs/roles/developer/contracts/assemblyscript)  
+[Roadmap](https://near.org/blog/mainnet-roadmap/)  
+[NEAR INFO](https://www.notion.so/dacef897e79c40299a7d49def98c5248)  
+[Economics Whitepaper](https://near.org/blog/near-protocol-economics/)  
+[Evolution of the Web Blog Post](https://near.org/blog/the-evolution-of-the-open-web/)  
+[Whitepaper](https://near.org/papers/the-official-near-white-paper/)  
 
 ## Overview
 
@@ -157,4 +167,4 @@ Product was not buildt based of the whiteppaer but first an MVP was build with d
 
 A hackathon took place where the team learned more about how smart contracts interact with a multi-shardered setup and the tools needed for developments. With this changes were made to the model and nightshade was made.
 
-![Untitled.png](Untitled.png)
+![](Untitled.png)
