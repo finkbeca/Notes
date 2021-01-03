@@ -21,8 +21,8 @@ bookCollapseSection: false
 [TheMoneyIllusion](https://www.themoneyillusion.com/)  
 [Enlightenmenteconomics](http://www.enlightenmenteconomics.com/blog/)  
 [Greg Mankiw](https://gregmankiw.blogspot.com/)  
-[Conversable Economist](https://gregmankiw.blogspot.com/)  
-[Macro Musings](https://gregmankiw.blogspot.com/)  
+[Conversable Economist](https://conversableeconomist.blogspot.com/)  
+[Macro Musings](https://macromusings.libsyn.com/)  
 
 ***
 </br>
