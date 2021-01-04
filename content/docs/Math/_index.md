@@ -19,7 +19,10 @@ katex: true
 - Taxicab Metric  → P = 1
 - Euclidean Metric  → P = 2
 
-[Julia Set Fractal ](https://en.wikipedia.org/wiki/Julia_set)
+[Julia Set Fractal ](https://en.wikipedia.org/wiki/Julia_set)  
+[Mathematics and CS Notes](https://crypto.stanford.edu/pbc/notes/)  
+[PBC Cryptography Library](https://crypto.stanford.edu/pbc/)  
+
 ## Books
   [Linear Algebra and Its Applications ](https://www.goodreads.com/book/show/179699.Linear_Algebra_and_Its_Applications)  
   [Elements of Set Theory ~ Enderton](https://www.goodreads.com/book/show/558206.Elements_of_Set_Theory)  

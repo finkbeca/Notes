@@ -6,7 +6,7 @@ bookToc: true
 
 # Blockchain
 
-Blockchain has been something I have been passionate about for a few years now. Here is a little bit of what I know.
+ A topic I have been  passionate about for some time now. 
 
 ## Ethereum
 [Ethereum Foundation](https://ethereum.org/en/)  

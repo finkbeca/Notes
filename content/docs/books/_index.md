@@ -33,8 +33,8 @@ bookComments: true
 [أب سينمائي](https://www.goodreads.com/book/show/42865548)  
 [The Shipping News](https://www.goodreads.com/book/show/7354.  The_Shipping_News?ac=1&from_search=true&qid=vJJdRMmmCe&rank=1)  
 [One Flew over the cuckoo's Nest](https://www.goodreads.com/book/show/332613.One_Flew_Over_the_Cuckoo_s_Nest)  
-
+[Slate Star Codex Volume 1-3](https://www.amazon.com/Slate-Star-Codex-Essays-I/dp/1735797103/)  
 
 ## Notes
-[Constrained Writing](https://en.wikipedia.org/wiki/Constrained_writing) 
-[Oulipo](https://en.wikipedia.org/wiki/Oulipo) 
+[Constrained Writing](https://en.wikipedia.org/wiki/Constrained_writing)  
+[Oulipo](https://en.wikipedia.org/wiki/Oulipo)  
