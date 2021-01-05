@@ -31,7 +31,7 @@ bookCollapseSection: false
 [Basics](https://en.wikipedia.org/wiki/Mechanism_design#:~:text=Mechanism%20design%20is%20a%20fieldsettings%2C%20where%20players%20act%20rationally.)  
 
 ## Game Theory
-
+ [Game Theory: An introduction](https://smile.amazon.com/Game-Theory-Introduction-Steven-Tadelis/dp/0691129088)  
 
 ## Notes
 

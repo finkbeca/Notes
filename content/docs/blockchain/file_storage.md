@@ -100,3 +100,10 @@ Get will run on a directory and on any subdirectories recursively.
 ## Swarm
 ---
 [Documentation](https://swarm-guide.readthedocs.io/en/latest/)  
+
+## Arweave
+[Arweave Whitepaper](https://www.arweave.org/yellow-paper.pdf)
+
+## Sia
+
+[Sia](https://sia.tech/)

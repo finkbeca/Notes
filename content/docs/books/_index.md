@@ -31,10 +31,11 @@ bookComments: true
 [The Gates of Paradise](https://www.goodreads.com/book/show/13117931-the-gates-of-paradise?from_search=true&from_srp=true&qid=v5TTweTtOP&rank=7) 
 [Not A wake](https://www.goodreads.com/book/show/11701114-not-a-wake?from_search=true&from_srp=true&qid=i3OhVtsmQ8&rank=1) -(Author's Emai (mike@cadaeic.net))  
 [أب سينمائي](https://www.goodreads.com/book/show/42865548)  
-[The Shipping News](https://www.goodreads.com/book/show/7354.  The_Shipping_News?ac=1&from_search=true&qid=vJJdRMmmCe&rank=1)  
+[The Shipping News](https://www.goodreads.com/book/show/7354.The_Shipping_News?ac=1&from_search=true&qid=vJJdRMmmCe&rank=1)  
 [One Flew over the cuckoo's Nest](https://www.goodreads.com/book/show/332613.One_Flew_Over_the_Cuckoo_s_Nest)  
 [Slate Star Codex Volume 1-3](https://www.amazon.com/Slate-Star-Codex-Essays-I/dp/1735797103/)  
+[Understanding Machine Learning](https://www.amazon.com/Understanding-Machine-Learning-Theory-Algorithms/dp/1107057132)  
 
 ## Notes
 [Constrained Writing](https://en.wikipedia.org/wiki/Constrained_writing)  
-[Oulipo](https://en.wikipedia.org/wiki/Oulipo)  
+[Oulipo](https://en.wikipedia.org/wiki/Oulipo)    
