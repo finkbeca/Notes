@@ -34,7 +34,7 @@ katex: true
   [Topology](https://topology.mitpress.mit.edu/)  
   [Naive Set Theory](https://www.goodreads.com/book/show/558194.Naive_Set_Theory?ac=1&from_search=true&qid=VlbfdVrLSK&rank=1)
   [Computability and Logic](https://www.goodreads.com/book/show/1556746.Computability_and_Logic?ac=1&from_search=true&qid=zrLHnTlIxG&rank=1)  
-  [Probability Theory: THe logic of science](https://smile.amazon.com/Probability-Theory-The-Logic-Science/dp/0521592712/)  
+  [Probability Theory: The logic of science](https://smile.amazon.com/Probability-Theory-The-Logic-Science/dp/0521592712/)  
   [Probalistic reasoning in intelligent systems](https://smile.amazon.com/Probabilistic-Reasoning-Intelligent-Systems-Representation/dp/1558604790/)  
   [ALl of Statistics](https://www.amazon.com/All-Statistics-Statistical-Inference-Springer/dp/0387402721)    
   [An Introduction to Decision Theory](https://www.goodreads.com/book/show/11729796-an-introduction-to-decision-theory?ac=1&from_search=true&qid=xdqDQGz58l&rank=1)  

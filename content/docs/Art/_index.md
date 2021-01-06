@@ -7,7 +7,9 @@ bookToc: true
 # Artists
 
 [Ai Weiwei](https://www.aiweiwei.com/)  
-- [Ai weiwei Refugee Crisis](https://qz.com/quartzy/1233898/ai-weiwei-built-a-giant-inflatable-raft-crammed-with-hundreds-of-refugees/)  
+-[Ai weiwei Refugee Crisis](https://qz.com/quartzy/1233898/ai-weiwei-built-a-giant-inflatable-raft-crammed-with-hundreds-of-refugees/)  
+</br/>
+
 [Nina Katchadourian](http://www.ninakatchadourian.com/)  
 [Ben Denzer](https://bendenzer.com/)  
 [Yayoi Kusama](http://yayoi-kusama.jp/e/information/)  
