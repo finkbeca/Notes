@@ -9,11 +9,11 @@ bookToc: true
 [Slate](https://slate.host/)  
 [Decentralzied Storage Overview](https://medium.com/bitfwd/what-is-decentralised-storage-ipfs-filecoin-sia-storj-swarm-5509e476995f)  
 [IPFS Ideas](https://docs.ipfs.io/concepts/usage-ideas-examples/)  
-[Ceramic](https://ceramic.network/)
-[IPFS Whitepaper](https://ipfs.io/ipfs/QmR7GSQM93Cx5eAg6a6yRzNde1FQv7uL6X1o4k7zrJa3LX/ipfs.draft3.pdf)
-[Creating IPFS Node](https://docs.ipfs.io/how-to/command-line-quick-start/#initialize-the-repository)
-[How IPFS deals with files](https://www.youtube.com/watch?v=Z5zNPwMDYGg&feature=youtu.be) -Youtube
-[Js-IPFS Files Docs](https://github.com/ipfs/js-ipfs/blob/master/docs/core-api/FILES.md)
+[Ceramic](https://ceramic.network/)  
+[IPFS Whitepaper](https://ipfs.io/ipfs/QmR7GSQM93Cx5eAg6a6yRzNde1FQv7uL6X1o4k7zrJa3LX/ipfs.draft3.pdf)  
+[Creating IPFS Node](https://docs.ipfs.io/how-to/command-line-quick-start/#initialize-the-repository)  
+[How IPFS deals with files](https://www.youtube.com/watch?v=Z5zNPwMDYGg&feature=youtu.be) -Youtube  
+[Js-IPFS Files Docs](https://github.com/ipfs/js-ipfs/blob/master/docs/core-api/FILES.md)  
 
 ### OrbitDB & Notes
 [Orbit DB](https://orbitdb.org/)  

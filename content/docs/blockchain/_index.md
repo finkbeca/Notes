@@ -23,7 +23,8 @@ bookToc: true
 [DEFI exploits and smart contract security ~ Video](https://www.youtube.com/watch?v=95_RmIAqRy0)  
 [Decentralzied Credit Scoring](https://union.finance/)  
 [Vyper IDE](https://vyper.online/)  
-[Vyper by Example](https://vyper.readthedocs.io/en/latest/vyper-by-example.html)   
+[Vyper by Example](https://vyper.readthedocs.io/en/latest/vyper-by-example.html) 
+[Building Smart Contracts on AAVE](https://www.chainshot.com/learn/aave)  
 
 ## SideChains
 EVM Side Chains
