@@ -5,6 +5,9 @@ bookToc: true
 ---
 # DEFI
 ---
+## Links
+[AAVE Documentation](https://docs.aave.com/developers/)  
+[Building Smart Contracts on AAVE](https://www.chainshot.com/learn/aave)  
 ## Notes
 ---
 These notes are from [Building Smart Contracts on AAVE](https://www.chainshot.com/learn/aave) and do a fantastic job explaing how to work with smart contracts and some DEFI protcols. THe examples below are to help me remember some of the more novel aspects of calling external contracts when working with crypto.  
