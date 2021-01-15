@@ -78,9 +78,7 @@ Note: Commonly written as {{<katex>}}\cup \{X: X\in \mathcal{C} \} {{</katex>}}
 - Every subsetof w is countable. Thus {{<katex>}}\omega - \{1\} {{</katex>}} is countable. 
 <br>
 
-
-{{<figure src="./ordinal.png" title="">}}
-
+![](/ordinal.png)  
 ## Other
 - **Cantor's Theorem** Every set is strictly dominated by its power set.
 
