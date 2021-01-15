@@ -62,7 +62,7 @@ Note: Commonly written as {{<katex>}}\cup \{X: X\in \mathcal{C} \} {{</katex>}}
 - If X is a partially order set, an element a of X is called a minimal element of X in case there is no element in X strictly smaller than a.  
 - It a set E contains a greatest element than a is called the greatest lower bound of E.  
 - **Axiom of Choice**: The cartesian product of a non-empty family of non-empty sets is non-empty.  
-- ** Zorn's Lemma**: If X is a partially ordered set such that every chain in X has an upper bound then X contains a maximal element. (Equivalent to AOC).  
+- **Zorn's Lemma**: If X is a partially ordered set such that every chain in X has an upper bound then X contains a maximal element. (Equivalent to AOC).  
 - every well ordered set is totally ordered.  
 - **WEll ordering theorem**: Every set can be well ordered.  
 ## Ordinal Numbers
