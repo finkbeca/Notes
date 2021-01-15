@@ -1,5 +1,5 @@
 ---
-title: Math
+title: Set Theory
 weight: 2
 bookToc: true
 katex: true
@@ -66,18 +66,17 @@ Note: Commonly written as {{<katex>}}\cup \{X: X\in \mathcal{C} \} {{</katex>}}
 - every well ordered set is totally ordered.  
 - **WEll ordering theorem**: Every set can be well ordered.  
 ## Ordinal Numbers
-- **Axiom of subsitution**: If S(a,b) is a sentence such that for each a in a set A the set {{<katex>}}\{ b: S(a,b) \} {{</katex>}} can be formed then there exists a function F with domain A such that F(a) = {{<katex>}}\{ b:S(a,b) \} {{</katex>}} for each a in A. 
-![](ordinal.png)
+- **Axiom of subsitution**: If S(a,b) is a sentence such that for each a in a set A the set {{<katex>}}\{ b: S(a,b) \} {{</katex>}} can be formed then there exists a function F with domain A such that F(a) = {{<katex>}}\{ b:S(a,b) \} {{</katex>}} for each a in A.  
 - {{<katex>}} \omega + 3 = 0<1<2<3<...<...<0<1<2{{</katex>}}  
 - {{<katex>}} \omega + 1 = 0<1<2<3<...<...<0{{</katex>}}  
-- {{<katex>}} (\aleph)_0 = \omega {{</katex>}}
+- {{<katex>}} \aleph_0 = \omega {{</katex>}}
 - For any ordinal {{<katex>}}\mathcal(a) {{</katex>}}, {{<katex>}} \mathcal(a) + 0 = 0 + \mathcal(a) = \mathcal(a) {{</katex>}}.  
 - Not every transfinite ordinal number has an immediate predeccsor; the ones that do not are called limit numbers.
 - Ordinal arithemetic is not entirely communative but it is associative.
 - If both ordinals are finite than arithmetic is communative but not if one is infinite.
 - **Counting Theorem** Each well ord ered set is similar to a unqiue ordinal number  
 - Every subsetof w is countable. Thus {{<katex>}}\omega - \{1\} {{</katex>}} is countable. 
-
+![](ordinal.png)
 ## Other
 - **Cantor's Theorem** Every set is strictly dominated by its power set.
 
