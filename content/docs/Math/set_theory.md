@@ -49,7 +49,7 @@ Note: Commonly written as {{<katex>}}\cup \{X: X\in \mathcal{C} \} {{</katex>}}
 - A function that always maps distinct elements onto distinct elements is called one-to-one. 
 ## Composites  
 - Functional composition may not be commutative, but it is always associative 
-##Numbers  
+## Numbers  
 - {{<katex>}} 0 = \emptyset {{</katex>}}, {{<katex>}} 1 = \{ \emptyset \} {{</katex>}}, {{<katex>}}2 = \{0, 1\}  {{</katex>}} or {{<katex>}} 2 = \{ \emptyset, \{ \emptyset \} \} {{</katex>}}...  
 - **Axiom of Infinity** There exists a set containing 0 and containing the sucessor of each of its elements  
 - A natural number by definition is the element of the minimal sucessor set {{<katex>}} \omega {{</katex>}}  
@@ -79,7 +79,7 @@ Note: Commonly written as {{<katex>}}\cup \{X: X\in \mathcal{C} \} {{</katex>}}
 <br>
 
 
-{{<figure src="./ordinal.png" title="Ordinal">}}
+{{<figure src="./ordinal.png" title="">}}
 
 ## Other
 - **Cantor's Theorem** Every set is strictly dominated by its power set.
