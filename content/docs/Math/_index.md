@@ -19,6 +19,9 @@ katex: true
 - Taxicab Metric  → P = 1
 - Euclidean Metric  → P = 2
 
+ZFC
+Axiom Schema
+
 [Julia Set Fractal ](https://en.wikipedia.org/wiki/Julia_set)  
 [Mathematics and CS Notes](https://crypto.stanford.edu/pbc/notes/)  
 [PBC Cryptography Library](https://crypto.stanford.edu/pbc/)  
