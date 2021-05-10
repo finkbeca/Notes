@@ -41,7 +41,7 @@ Note: Commonly written as {{<katex>}}\cup \{X: X\in \mathcal{C} \} {{</katex>}}
 - {{<katex>}} A \cap B = \{ x : x \in A && x \in B \} {{</katex>}} known as the intersection of set A and B where the intersection only contains elements within both sets.  
 - **De Morgan Laws**: {{<katex>}}( A \cup B)' = A' \cap B'  {{</katex>}} and {{<katex>}} (A \cap B)' = A' \cup B' {{</katex>}}
 - **Axiom of Powers**: For each set there exists a collection of sets that contains among its elements all the subsets of the given set.  
-- The order pair of a and b with first coordinate a and second coordinate b is the set (a, b) defined by {{<katex>}} (a,b) = \{ \{ a|}, \{a, b\} \}{{</katex>}}.  
+- The order pair of a and b with first coordinate a and second coordinate b is the set (a, b) defined by {{<katex>}} (a,b) = \{ \{ a| , \{a, b\} \}{{</katex>}}.  
 - Cartesian product of A and B; it is characterized by the fact that {{<katex>}} A \cross B = \{ x : x = (a.b) \}  {{</katex>}} for some a in A and some b in B  
 - A set is an equivalence relation if it is reflexive, symmetric, and transitive.  
 - If X and Y are sets, a function from (or on) X to (or into) Y is a relation f such that dom f = X and such that for each x in X there is a unique element y in Y with (x,y) in f.   
