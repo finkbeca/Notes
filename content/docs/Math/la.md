@@ -9,4 +9,5 @@ katex: true
 
 ## Notes
 
-{{< embed-pdf url="217_HW.pdf" >}}
+{{< embed-pdf url="./Math/217_HW.pdf" >}}
+{{< embed-pdf url="../resume.pdf" >}}
