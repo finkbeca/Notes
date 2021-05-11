@@ -12,7 +12,7 @@ Algebra - Michael Artin
 Abstract Algebra; An Introduction
 
 
-## {{<katex>}} Congrunce in \mathbb{Z} {{</katex>}}
+## Congrunce in {{<katex>}}  \mathbb{Z} {{</katex>}}
 - {{<katex>}} a \equiv c (mod n) \implies [a] = [c] {{</katex>}}  
 - Let  {{<katex>}} n > 1 {{</katex>}} be an integer and consider the congruence modulo n then it follows that if a is any integer and r is any remainder when a is divided by n then {{<katex>}} [a] = [r] {{</katex>}} furthermore there are n distinct congruence classes {{<katex>}} [0], [1],... [n-1] {{</katex>}}  
 - The sum of two classes is the class containing both classes {{<katex>}} [a] \oplus [c] = [a + c] {{</katex>}}  
