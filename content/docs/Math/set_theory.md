@@ -11,7 +11,7 @@ katex: true
 
 ## Books
 
-[Naive Set Theory](https://www.goodreads.com/book/show/558194.Naive_Set_Theory?ac=1&from_search=true&qid=VlbfdVrLSK&rank=1) 
+[Naive Set Theory](https://www.goodreads.com/book/show/558194.Naive_Set_Theory?ac=1&from_search=true&qid=VlbfdVrLSK&rank=1)  
 [Elements of Set Theory ~ Enderton](https://www.goodreads.com/book/show/558206.Elements_of_Set_Theory)  
 
 ## Notes
@@ -74,7 +74,7 @@ Note: Commonly written as {{<katex>}}\cup \{X: X\in \mathcal{C} \} {{</katex>}}
 - Not every transfinite ordinal number has an immediate predeccsor; the ones that do not are called limit numbers.
 - Ordinal arithemetic is not entirely communative but it is associative.
 - If both ordinals are finite than arithmetic is communative but not if one is infinite.
-- **Counting Theorem** Each well ord ered set is similar to a unqiue ordinal number  
+- **Counting Theorem** Each well ordered set is similar to a unqiue ordinal number  
 - Every subsetof w is countable. Thus {{<katex>}}\omega - \{1\} {{</katex>}} is countable. 
 
 ## Other
