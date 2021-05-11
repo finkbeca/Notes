@@ -30,7 +30,7 @@ Abstract Algebra; An Introduction
 
 ## Rings
 - A ring is a nonempty set R equipped with two operations usually written as addition and multiplication that satisfy the following:
-- {{<katex>}} a \in R and b \in R \implies a + b \in R {{</katex>}}  
+- {{<katex>}} a \in R \land b \in R \implies a + b \in R {{</katex>}}  
 - a + (b+c) = (a+b)+ c  
 - a+ b = b + a  
 - There is {{<katex>}} 0_R \in R | a + 0_R = a = 0_R + a{{</katex>}}  
@@ -38,7 +38,7 @@ Abstract Algebra; An Introduction
 - If {{<katex>}} a \in R ^ b \in R \implies ab \in R {{</katex>}}  
 - a(bc) = ab(c)  
 - a(b+c) = ab+ac ^ (a+b)c = ac+bc
-- **An Integral domain** is a commutative ring R with identity {{<katex>}} 1_R \neq 0_R{{</katex>}} where given {{<katex>}} a,b\in R ab - 0_R \implies a = 0_R or b = 0_R{{</katex>}}  
+- **An Integral domain** is a commutative ring R with identity {{<katex>}} 1_R \neq 0_R{{</katex>}} where given {{<katex>}} a,b\in R ab - 0_R \implies a = 0_R \lor b = 0_R{{</katex>}}  
 - **A field** is a commutative ring R  {{<katex>}} 1_R \neq 0_R{{</katex>}} where each {{<katex>}} a \neq 0_R  {{</katex>}} the equation ax =1 has a solution in R  
 - (r,s) + (r', s' ) = (r + r' , s + s') and (r,s)(r', s') = (rr', ss')   
 -  {{<katex>}} \mathbb{Z} {{</katex>}} is a subring of the ring  {{<katex>}} \mathbb{Q} {{</katex>}} of rational numbers and  {{<katex>}} \mathbb{Q} {{</katex>}} is a subring and subfield and of the field  {{<katex>}} \mathbb{R} {{</katex>}} as  {{<katex>}} \mathbb{Q} {{</katex>}} itself is a field. Simiarly  {{<katex>}} \mathbb{R} {{</katex>}} is a subfield and subring of the field  {{<katex>}} \mathbb{C} {{</katex>}}  
