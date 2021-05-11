@@ -16,10 +16,11 @@ katex: true
 -  {{<katex>}} d(x,y) = [|x_1 - y_|]^p + |x_2 - y_2|^P]^(1/p) {{</katex>}}
 - Taxicab Metric  → P = 1
 - Euclidean Metric  → P = 2
-- AOC is equivalent to For All Vector Spaces there exists a basis
 
-ZFC
-Axiom Schema
+
+ZFC  
+Axiom Schema  
+- AOC is equivalent to For All Vector Spaces there exists a basis
 
 [Julia Set Fractal ](https://en.wikipedia.org/wiki/Julia_set)  
 [Mathematics and CS Notes](https://crypto.stanford.edu/pbc/notes/)  
