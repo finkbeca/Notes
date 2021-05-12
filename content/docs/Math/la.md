@@ -8,7 +8,9 @@ katex: true
 ---
 
 ## Notes
-{{< embed-pdf url="217_HW_Compiled.pdf" >}}
-{{< embed-pdf url="\Users\Colin\Dev\Misc\Notes\Notes\content\docs\Math\217_HW.pdf" >}}
-{{< embed-pdf url=".\Math\217_HW.pdf" >}}
-{{< embed-pdf url="..\resume.pdf" >}}
+{{< embed-pdf url="./docs/Math/217_HW.pdf" >}}  
+{{< embed-pdf url="../docs/Math/217_HW.pdf" >}}  
+{{< embed-pdf url="./Math/217_HW.pdf" >}} 
+{{< embed-pdf url="../Math/217_HW.pdf" >}} 
+{{< embed-pdf url="./content/docs/Math/217_HW.pdf" >}}  
+{{< embed-pdf url="../217_HW.pdf" >}}
