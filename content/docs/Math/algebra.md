@@ -38,6 +38,7 @@ Abstract Algebra; An Introduction
 - If {{<katex>}} a \in R ^ b \in R \implies ab \in R {{</katex>}}  
 - a(bc) = ab(c)  
 - a(b+c) = ab+ac ^ (a+b)c = ac+bc
+A ring without identity is known as a rng. 
 - **An Integral domain** is a commutative ring R with identity {{<katex>}} 1_R \neq 0_R{{</katex>}} where given {{<katex>}} a,b\in R ab - 0_R \implies a = 0_R \lor b = 0_R{{</katex>}}  
 - **A field** is a commutative ring R  {{<katex>}} 1_R \neq 0_R{{</katex>}} where each {{<katex>}} a \neq 0_R  {{</katex>}} the equation ax =1 has a solution in R  
 - (r,s) + (r', s' ) = (r + r' , s + s') and (r,s)(r', s') = (rr', ss')   
@@ -54,4 +55,31 @@ Abstract Algebra; An Introduction
 - The property of being a commutative ring is preserved by isomorphism. Therefore no commutative ring can be isomorphic to a noncommutative ring.   
 
 ## Groups
+
+A group is a nonempty set G equipped with a binary operation * that satisfies the following axioms:  
+- Closure   
+- Associativity  
+- There exists an element in a group G known as the identity such that {<katex>}} a \dot e = a = e \dot a {{</katex>}}  
+- There exists an inverse for a group st {<katex>}} a * d = e  {{</katex>}} and {<katex>}} d * a = e{{</katex>}}  
+A group is abelian if it is commutative (a * b = b * a) 
+- A group G has a unique identity element, a unique inverse, and cancelation holds.
+- if G is a group then {<katex>}} (ab)^{-1} = b^{-1}a^{-1} {{</katex>}}  and (a^{-1})^{-1} = a
+- A subset H of a group G is a subgroup of G if H itself a group under the operation in G  
+- Let G and H be groups with the group operation by *. G is isomorphic to a group H if there exists a bijective function from G to H that also preserves the property  {<katex>}} f(a * b) = f(a) * f(b) {{</katex>}}   
+- Let G and H be groups, a function is said to be a homorphism if {<katex>}} f(a * b) = f(a) * f(b) {{</katex>}}   
+- Let K be a subgroup of a group G. Then the relation of congruence modulo K is reflexive, symmetric, and transitivity.     
+- Let K be a subgroup of a group G then {<katex>}} a \equiv c (mod K)  {{</katex>}} iff {<katex>}} Ka = kc{{</katex>}}   
+- If G has a n order then G is isomorphic to {<katex>}} \mathbb{Z}_2 {{</katex>}} this follows all the way to when G has an order of 7  
+- a subgroup N of a group G is said to be normal if Na = aN for every a in G.   
+- Let N be a normal subgroup of a group G then if Na = nc and Nb = Nd in G/N then Nab = Ncd.  
+- Let N be a normal subgroup of a group G then G/N is a group under the operation defined by (Na)(Nc) = Nac  
+- If G is finite then the order of G/N is |G|/|N|  
+- If G is abelian group then so is G/N  
+The group G/N is called the quotient group or factor group of G by N.  
+- Ka + Kb = K(a+b) is the same as [a]+[b] = [a + b]  
+- Let {<katex>}}f: G \rightarrow H{{</katex>}} be a homomorphism of groups. Then the kernel of F is the set {<katex>}} {{</katex>}}   
+- Let {<katex>}}f: G \rightarrow H {{</katex>}} be a homomorphism of groups with kernel K. Then K is normal subgroup of G.  
+- The kernel of a homomorphism f measures how far f is from being injective.   
+- Let {<katex>}}f: G \rightarrow H {{</katex>}} be a group homomorphism with kernel K. Then f(a) = f(b) iff Ka = Kb.  
+-Let {<katex>}} f: G \rightarrow H {{</katex>}} be a surjective homomorphism of groups with kernel K. Then the quotient group G/K is isomorphic to H.  
 
