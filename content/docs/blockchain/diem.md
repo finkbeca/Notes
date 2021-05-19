@@ -8,6 +8,23 @@ bookToc: true
 
 [Diem Docs](https://developers.diem.com/main/docs)   
 
+
+Libra core is an open source implementation of the libra protocol. 
+Move is used to define core mechanisms of the blockchain such as currency and validator memberships. 
+
+-All data in the Libra Blockchain is a single versioned database
+- The ledger state represents the ground truth about the Libra ecosystem including the quantity of Libra held by each user at a given version. Each validator must know the ledger state to process new transactions. 
+
+- Acount adresses are intiated when a transaction is sent to it, however it must also have a public/private key. This private key can then be used to authenticate future transactions from such account. 
+
+- Move Modules contain move bytecode that declares resources type and procedures. They are attached to an address of the account, and must be uniquely named within the account. 
+- Modules are immutable. 
+- The ledger history stores the sequenced of committed and executed transactions as well as the associated events that were emmitted. 
+
+- Genesis is the intial ledger state of the chain, where the modules are intialized. 
+
+- Agreements on the database state must be reached between validators even if there are Byzantine faults. Byzantine faults are modeling worse case errors where validators act malicious and therefore protect against smaller faults like software failurue as well. 
+
 ### Transactions 
 
 - A new transaction on diem is in fact requesting the ledger state to be updated with their transaction information.  
