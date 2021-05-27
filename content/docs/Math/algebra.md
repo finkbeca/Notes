@@ -82,4 +82,4 @@ The group G/N is called the quotient group or factor group of G by N.
 - The kernel of a homomorphism f measures how far f is from being injective.   
 - Let {{<katex>}}f: G \rightarrow H {{</katex>}} be a group homomorphism with kernel K. Then f(a) = f(b) iff Ka = Kb.  
 -Let {{<katex>}} f: G \rightarrow H {{</katex>}} be a surjective homomorphism of groups with kernel K. Then the quotient group G/K is isomorphic to H.  
-
+- Let G be a group and let N be a subgroup of G. Therefore  {{<katex>}} \forall s \in G {{</katex>}} and {{<katex>}} \forall a \in N  {{</katex>}}, {{<katex>}} s^{-1}as \in N  {{</katex>}}.

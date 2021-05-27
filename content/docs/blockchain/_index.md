@@ -26,6 +26,46 @@ bookToc: true
 [Vyper by Example](https://vyper.readthedocs.io/en/latest/vyper-by-example.html) 
 [Building Smart Contracts on AAVE](https://www.chainshot.com/learn/aave)  
 
+***GSN***
+Uses metatransactions (collect calls) to minimize onboarding and for UX friction. It takes away the need for clients to have to have gas to pay for transaction fees. 
+  
+- Allows gas to be paid in any token   
+- Allows gas to be paid in fiat  
+- Enables more privacy for accounts  
+- Reduces onboarding cost for new members  
+
+This works as a relay server can send a user's transaction for them and pay themselves for the gas cost. Instead of signing an Ethereum trasaction, users sign a message containing information about a transaction that they wish to be executed and sent ona relay server. The relay server is then refunded for the gas cost by the paymaster contract.  
+
+Each dapp having an relay service , provides this service at-cost to each user. If one dapp's relay server would of went down then the transactios can be routed to another dapp's relay server with a premenium fee. This stregthens the overall network. 
+
+In the GSn all acesss and refund logic is implemented within the paymaster contract. A paymaster has a gas tank of ETH in the RelayHub and can implement logic to decide whether to accept, or reject a meta transaction. (This could because it only accepts whitelisted users, or some other contract method used for onboarding).
+
+To use meta transactions ```msg.sender``` is replaced with ```_msgSender()```.
+
+Relay Hub connects uses running clients, relay servers , and paymasters so that participants don;t need to trust each out. 
+
+*** Writing a GSN-Enabled Smart Contract ***
+- Inherit from BaseRelayRecipient contract
+``` import "@opengsn/contracts/src/BaseRelayRecipient.sol";
+
+contract MyContract is BaseRelayRecipient {
+    ...
+} ```
+
+Use ```_msgSender() ``` instead of ```msg.sender```.
+
+Note: If using other third party contracts they may  be unsafe to mix with BaseRelay Recipient, due to using msg.sender
+
+In order to start paying the meta-transaction fees, a Paymaster contract is needed. This contract is inherited from BasePayMaster, and requires implementations of preRelayedCall and postRelayed Call. The contract is lastly needed to be deployed and configured with the RelayHub address. 
+
+Paymaster will be charged for tranactions after it consumes the amount of gas limited by ``` GasLimits.acceptanceBudget``` even it reverts the call. Due to this be careful how you manage transactions, and only accept transactions you trust to go through. Some ways to do this include, onboarding functions, whitelisting users, delegating this procedure of chain, or charging in tokens.
+
+PostRelayedCall, provides mesasures for the paymaster contract to charge the user for the call, other book keeping methods, as well as a good estimate of the transaction cost
+
+If a preferred relay is not configured, all transactions will be routed through third party relay servers for an extra fee.
+
+
+
 ## SideChains
 EVM Side Chains
 [Avalanche](https://www.avalabs.org/)  
