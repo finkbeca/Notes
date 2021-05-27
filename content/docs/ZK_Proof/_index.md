@@ -9,6 +9,7 @@ math: true
 
 ## Links
 [ZK Proofs for Children](http://pages.cs.wisc.edu/~mkowalcz/628.pdf)  
+[ZK proofs resources](https://ethresear.ch/t/zero-knowledge-proofs-starter-pack/4519)
 
 ## Notes
 Zcash is derived from the fact that shielded transactions can be fully encrypted on the blockchain but still verified using ZK-SNARK proofs

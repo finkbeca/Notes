@@ -32,6 +32,9 @@ bookCollapseSection: false
 
 ## Game Theory
  [Game Theory: An introduction](https://smile.amazon.com/Game-Theory-Introduction-Steven-Tadelis/dp/0691129088)  
+ [The Art of Strategy](https://smile.amazon.com/Art-Strategy-Theorists-Success-Business/dp/0393337170/ref=pd_bxgy_img_2/131-7856020-5987520?_encoding=UTF8&pd_rd_i=0393337170&pd_rd_r=e0a39eec-b63d-4086-a979-53ebe7910cf5&pd_rd_w=tA4zq&pd_rd_wg=5ebay&pf_rd_p=fd3ebcd0-c1a2-44cf-aba2-bbf4810b3732&pf_rd_r=0E9YZATXX4F3ZB0FEWH7&psc=1&refRID=0E9YZATXX4F3ZB0FEWH7)
+ [Theory of Games and Economic Behavior](https://smile.amazon.com/Theory-Games-Economic-Behavior-Commemorative/dp/1777257301/ref=pd_bxgy_img_3/131-7856020-5987520?_encoding=UTF8&pd_rd_i=1777257301&pd_rd_r=e0a39eec-b63d-4086-a979-53ebe7910cf5&pd_rd_w=tA4zq&pd_rd_wg=5ebay&pf_rd_p=fd3ebcd0-c1a2-44cf-aba2-bbf4810b3732&pf_rd_r=0E9YZATXX4F3ZB0FEWH7&psc=1&refRID=0E9YZATXX4F3ZB0FEWH7)
+ [Decision Theory](https://smile.amazon.com/Introduction-Decision-Cambridge-Introductions-Philosophy/dp/0521716543/ref=sr_1_5?dchild=1&keywords=decision+theory&qid=1621385020&s=books&sr=1-5)
 
 ## Notes
 

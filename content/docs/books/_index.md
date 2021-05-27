@@ -34,8 +34,14 @@ bookComments: true
 [The Shipping News](https://www.goodreads.com/book/show/7354.The_Shipping_News?ac=1&from_search=true&qid=vJJdRMmmCe&rank=1)   
 [One Flew over the cuckoo's Nest](https://www.goodreads.com/book/show/332613.One_Flew_Over_the_Cuckoo_s_Nest)   
 [Slate Star Codex Volume 1-3](https://www.amazon.com/Slate-Star-Codex-Essays-I/dp/1735797103/)   
-[Understanding Machine Learning](https://www.amazon.com/Understanding-Machine-Learning-Theory-Algorithms/dp/1107057132)    
-
+[Understanding Machine Learning](https://www.amazon.com/Understanding-Machine-Learning-Theory-Algorithms/dp/1107057132)     
+[The art of Doing Science and Engineering: Learning to Learn](https://www.goodreads.com/book/show/530415.The_Art_of_Doing_Science_and_Engineering)  
+[Finite and Infinite Games](https://www.goodreads.com/book/show/189989.Finite_and_Infinite_Games)  
+[THe Aleph and other stories](https://www.goodreads.com/en/book/show/5787.The_Aleph_and_Other_Stories)   
+[The second sex](https://www.goodreads.com/book/show/457264.The_Second_Sex)    
+[Existentialism Is a Humanism](https://www.goodreads.com/book/show/51985.Existentialism_is_a_Humanism)  
+[A pragmatic Introduction to secure MPC](https://securecomputation.org/)  
 ## Notes
 [Constrained Writing](https://en.wikipedia.org/wiki/Constrained_writing)  
 [Oulipo](https://en.wikipedia.org/wiki/Oulipo)    
+[Satre]
