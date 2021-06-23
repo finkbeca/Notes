@@ -7,12 +7,65 @@ bookToc: true
 ---
 ## Links
 [AAVE Documentation](https://docs.aave.com/developers/)  
-[Building Smart Contracts on AAVE](https://www.chainshot.com/learn/aave)  
+[Building Smart Contracts on AAVE](https://www.chainshot.com/learn/aave) 
+[AAVE Credit Delegation](https://docs.aave.com/developers/v/1.0/developing-on-aave/the-protocol/credit-delegation ) 
+[AAVE Lending pool Contract](https://docs.aave.com/developers/the-core-protocol/lendingpool )
+[Credit Delegation ShowCase AAVE](https://showcase.ethglobal.co/marketmake/aave-credit-delegation)
+
 ## Notes
 ---
-These notes are from [Building Smart Contracts on AAVE](https://www.chainshot.com/learn/aave) and do a fantastic job explaing how to work with smart contracts and some DEFI protcols. THe examples below are to help me remember some of the more novel aspects of calling external contracts when working with crypto.  
+### C.R.E.A.M Finance
+-CREAM is a decnetralized lending protocol for individuals and protocols to acess financial services.  Users are able to lend any supported assets on the markets and use the capital as collateral to borrow another supported asset. 
+
+-What is the Iron Bank? The iron bank offers services to both individual users and protocols, allowing a small whitelisted list of protocols to borrow from the pool of assets with little collateral.  Credit Risks are managed through a combination of smart contract security review , insurance coverage, and financial backstop.
+
+Assets supplied to the Iron Bank are held in seperate pools from those on CREAM v1. Two different asset pools (or banks).
+
+Anyone can deposit into the iron bank. 
+
+Yields in the iron bank generally range from 20-40% APY on stable coin deposits
+
+THe iron bank has a higher utilization ratio then CREAM v1 meaning the ratio of borrowed assets vs total supply assets is higher leaving to lower avaiable liquidity. 
+
+Protocols must be approved to be under collaterized from the Iron Bank, they are approved by the CREAM team. Protocols must of had a good reputation/ track record, secruity audits, insurance coverage, and liquidity. 
+
+Iron Bank currently uses Chainlink oracle for its assets.
+
+### AAVE
+-Aave is a decentralized non-custodial liquidity market protocol where users can deposit to provide liquidity and earn income and  borrowers are able to borrow, either over collaterized perptually, or under collaterized through (one-block liquidity (flash loans )).  
+
+-Aave allows you to withdraw your funds from the pool on demand or export tokensized version of your lender (aTokens) which can be treated as a seperate asset token.   
+
+-AAVE is governed by the Aave protocol governance, AAVE is used to vote and decide on the outcome of Aave improvement proposals. AAVE can also be staked within the protcol saftey module to provide security to depositors. Stakers earn rewards and fees from the protocol.   
+
+-Total supply of AAVE will be 16 million, 13 of these will be redeemed by LEND token holders, and 3M will be allocated to the AAVE reserve. Staking on the saftey module will feature plain AAVE alongside AAVE/Eth pair, where the latter will use Balancer to incentivize market liquiditiy. 
+
+- The community can decide to distribute ecosystem incentives for certain assets or offer rewards for applications built on top of AAVE. 
+
+- Goverance is a 5 step process, First community creats an AIP, Secondly the Community evaluates and provides feedback for the AIP, Thirdly there has been a communal shift to proposal and implement said AIP, 4, the genesis team implements the proposal and submits the AIP to be voted on. Lastly, the goverance evaluates the implementation and approves or rejects the proposal
+
+- Two types of governance polices, protocol polices and market polices. Protocol polices govern the behavior of AAve including risks, improvement, and incentives, and market policies define the context of each market within the protocol. 
+---
+### AAVE Lending Pool (L2P)
+- Lending Pool is the main contract of the Aave protocol
+
+-L2P is a lending platform aggregator for the aave lending pool to inhibit the use of under collaterized loans for specific protocols and dapps. 
+
+-Two type of providers liquidity provided on over-collartierized lending platforms like Aave, compound , dydx. These agents using these platforms who have unused collateral could delegate these borrowing lines to L2P. 
+
+- Secondly there can be direct agents who provide liquidity to the L2P protocol.
+
+- These agents act as liqudity providers for specific protocols, these protocols then can use spraed these credit lines over multiple lending platforms including L2P, and Aave. Note a pool here refers directly to the individual protocol in which a lender has delegated credit to, it does refer to a lending platform. Once the loans are spreads across the optimal lending platform the borrower can then collect there money. When the borrower returns to pay there money, they must pay the interest for each lending platform, the interest for each liquidity provider as well as a reserve to L2P which is used in the case of default. In the case of default this reserve is then used to pay these accounts, if the reserve does not cover it fully it is then on the liquidity providers to pay off there loans.
+
+- Note that once loans have been made by liqiudity providers for a given pool, it it is possible the individual loans on each lending pool to change, this can be done through the use of flash loans between lending platforms. 
+
+- There has been future talk for L2P to implement credit default swaps allowing liquidity providers to buy these "insurance against default" where another actor would pay off the default in the case of such an event, elsewise the lqiudity provider would be paying monthly preminium to the CDS agent, through the use of a smart contract. 
+
+
 ### Basic Escrow Contract Solidity Examples
-THis is an good example of using payable solidity ^.0.50 +  
+---
+- These notes are from [Building Smart Contracts on AAVE](https://www.chainshot.com/learn/aave) and do a fantastic job explaing how to work with smart contracts and some DEFI protcols. THe examples below are to help me remember some of the more novel aspects of calling external contracts when working with crypto.  
+This is an good example of using payable solidity ^.0.50 +  
 ```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.7.5;

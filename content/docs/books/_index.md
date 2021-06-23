@@ -40,7 +40,12 @@ bookComments: true
 [THe Aleph and other stories](https://www.goodreads.com/en/book/show/5787.The_Aleph_and_Other_Stories)   
 [The second sex](https://www.goodreads.com/book/show/457264.The_Second_Sex)    
 [Existentialism Is a Humanism](https://www.goodreads.com/book/show/51985.Existentialism_is_a_Humanism)  
-[A pragmatic Introduction to secure MPC](https://securecomputation.org/)  
+[A pragmatic Introduction to secure MPC](https://securecomputation.org/) 
+[The new wine rules](https://www.goodreads.com/book/show/34128279-the-new-wine-rules)  
+[Adventures on the wine route](https://www.goodreads.com/book/show/41301.Adventures_on_the_Wine_Route)
+[Lulu's Pronvecal table](https://www.amazon.com/Lulus-Provencal-Table-Exuberant-Vineyard/dp/1580084001)
+[Nomas Guide to Fermentation](https://www.amazon.com/Noma-Guide-Fermentation-lacto-ferments-Foundations/dp/1579657184)
+[La Vida](https://www.amazon.com/Vida-Puerto-Family-Culture-Poverty-San/dp/0394450469)
 ## Notes
 [Constrained Writing](https://en.wikipedia.org/wiki/Constrained_writing)  
 [Oulipo](https://en.wikipedia.org/wiki/Oulipo)    
