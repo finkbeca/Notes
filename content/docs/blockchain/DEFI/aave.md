@@ -1,62 +1,17 @@
 ---
-title: DEFI
+title: AAVE
 weight: 2
 bookToc: true
 ---
-# DEFI
----
-## Links
-[AAVE Documentation](https://docs.aave.com/developers/)  
-[Building Smart Contracts on AAVE](https://www.chainshot.com/learn/aave) 
-[AAVE Credit Delegation](https://docs.aave.com/developers/v/1.0/developing-on-aave/the-protocol/credit-delegation ) 
-[AAVE Lending pool Contract](https://docs.aave.com/developers/the-core-protocol/lendingpool )
-[Credit Delegation ShowCase AAVE](https://showcase.ethglobal.co/marketmake/aave-credit-delegation)
 
-## Notes
-Most popular protocols for swapping tokens use invariants. Invariants are algorithms for alp that express the relation between reserve of two distinct assets. 
-- YieldSpace's [whitepaper](https://yield.is/YieldSpace.pdf) has a great section on invariants used for each protocol. 
----
-### YieldSpace
--fyTokens a synthetic token that is reedemable for a target asset aftet a fixed maturity date.  
-- Price varaints by uniswap and other alp are not optimizted for fytokens, especially close to maturity.   
-- The marginal interest rate of fyDai that is offered by a pool at any time is equal to the ratio of fyDai reserves to the Dai minus 1
+# AAVE
+- Aave is a decentralized non-custodial liquidity market protocol where users can deposit to provide liquidity and earn income and  borrowers are able to borrow, either over collaterized perptually, or under collaterized through (one-block liquidity (flash loans )).  
 
-Uniswaps Invariant is x * y = k, where x is the reserve balance of one currency, and y of the other, k is the constant product value. When a non- liquidity provider uses the pool to convert funds, they will move the constant product value by adding either x or y to the pool while removing the opposite respectively. In this process the constant product value is then change. In Uniswap v2 the process is simple there is a fee that is taken and this sum is taken from the trader prior to the tokens being put into the account, the remaining tokens are added to the pool. Dividing k by the reserve balance of the added currency will now give us the new reserve balance tof the currency being taken out. This is now subtracted from the starting reserve balance of the currency taken out to find the exact amount of tokens being taken out. If users continue trading one side more and more the amount of tokens they would be getting would disminish. (This means that large transfer compared to the balance of pool would be grossly more costly). This in effect causes an arbitrage opprutunit correcting the price of the market. 
+- Aave allows you to withdraw your funds from the pool on demand or export tokensized version of your lender (aTokens) which can be treated as a seperate asset token.   
 
-yield space introduces time into its invariant, with it being x^{1-t} + y^{1-t} = k where 0 \leq t < 1 and t = 1 when the yield dollar is close to the intialization.
+- AAVE is governed by the Aave protocol governance, AAVE is used to vote and decide on the outcome of Aave improvement proposals. AAVE can also be staked within the protcol saftey module to provide security to depositors. Stakers earn rewards and fees from the protocol.   
 
-This should be thought of as a pricing formula for yield space, and it has the unique property that its interest rate, r, at any time is r = y/x - 1 where y is a fytoken and x is token
-
-arbitrage opprutunties should ony arise when interest rates change? Why does this matter?
-
-Uniswap / bancor/ Curve / Mstable, are implement different invariants with differing purposes however all lack certains needs of a time sensitive interest bearing tokne like fyToken, that is where the constant power sum formula comes in
-
-
-### C.R.E.A.M Finance
--CREAM is a decnetralized lending protocol for individuals and protocols to acess financial services.  Users are able to lend any supported assets on the markets and use the capital as collateral to borrow another supported asset. 
-
--What is the Iron Bank? The iron bank offers services to both individual users and protocols, allowing a small whitelisted list of protocols to borrow from the pool of assets with little collateral.  Credit Risks are managed through a combination of smart contract security review , insurance coverage, and financial backstop.
-
-Assets supplied to the Iron Bank are held in seperate pools from those on CREAM v1. Two different asset pools (or banks).
-
-Anyone can deposit into the iron bank. 
-
-Yields in the iron bank generally range from 20-40% APY on stable coin deposits
-
-THe iron bank has a higher utilization ratio then CREAM v1 meaning the ratio of borrowed assets vs total supply assets is higher leaving to lower avaiable liquidity. 
-
-Protocols must be approved to be under collaterized from the Iron Bank, they are approved by the CREAM team. Protocols must of had a good reputation/ track record, secruity audits, insurance coverage, and liquidity. 
-
-Iron Bank currently uses Chainlink oracle for its assets.
-
-### AAVE
--Aave is a decentralized non-custodial liquidity market protocol where users can deposit to provide liquidity and earn income and  borrowers are able to borrow, either over collaterized perptually, or under collaterized through (one-block liquidity (flash loans )).  
-
--Aave allows you to withdraw your funds from the pool on demand or export tokensized version of your lender (aTokens) which can be treated as a seperate asset token.   
-
--AAVE is governed by the Aave protocol governance, AAVE is used to vote and decide on the outcome of Aave improvement proposals. AAVE can also be staked within the protcol saftey module to provide security to depositors. Stakers earn rewards and fees from the protocol.   
-
--Total supply of AAVE will be 16 million, 13 of these will be redeemed by LEND token holders, and 3M will be allocated to the AAVE reserve. Staking on the saftey module will feature plain AAVE alongside AAVE/Eth pair, where the latter will use Balancer to incentivize market liquiditiy. 
+- Total supply of AAVE will be 16 million, 13 of these will be redeemed by LEND token holders, and 3M will be allocated to the AAVE reserve. Staking on the saftey module will feature plain AAVE alongside AAVE/Eth pair, where the latter will use Balancer to incentivize market liquiditiy. 
 
 - The community can decide to distribute ecosystem incentives for certain assets or offer rewards for applications built on top of AAVE. 
 
@@ -64,7 +19,7 @@ Iron Bank currently uses Chainlink oracle for its assets.
 
 - Two types of governance polices, protocol polices and market polices. Protocol polices govern the behavior of AAve including risks, improvement, and incentives, and market policies define the context of each market within the protocol. 
 ---
-### AAVE Lending Pool (L2P)
+# AAVE Lending Pool (L2P)
 - Lending Pool is the main contract of the Aave protocol
 
 - L2P is a lending platform aggregator for the aave lending pool to inhibit the use of under collaterized loans for specific protocols and dapps. 
@@ -80,7 +35,7 @@ Iron Bank currently uses Chainlink oracle for its assets.
 - There has been future talk for L2P to implement credit default swaps allowing liquidity providers to buy these "insurance against default" where another actor would pay off the default in the case of such an event, elsewise the lqiudity provider would be paying monthly preminium to the CDS agent, through the use of a smart contract. 
 
 
-### Basic Escrow Contract Solidity Examples
+# Basic Escrow Contract Solidity Examples
 ---
 - These notes are from [Building Smart Contracts on AAVE](https://www.chainshot.com/learn/aave) and do a fantastic job explaing how to work with smart contracts and some DEFI protcols. THe examples below are to help me remember some of the more novel aspects of calling external contracts when working with crypto.  
 This is an good example of using payable solidity ^.0.50 +  
