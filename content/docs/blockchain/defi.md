@@ -13,7 +13,25 @@ bookToc: true
 [Credit Delegation ShowCase AAVE](https://showcase.ethglobal.co/marketmake/aave-credit-delegation)
 
 ## Notes
+Most popular protocols for swapping tokens use invariants. Invariants are algorithms for alp that express the relation between reserve of two distinct assets. 
+- YieldSpace's [whitepaper](https://yield.is/YieldSpace.pdf) has a great section on invariants used for each protocol. 
 ---
+### YieldSpace
+-fyTokens a synthetic token that is reedemable for a target asset aftet a fixed maturity date.  
+- Price varaints by uniswap and other alp are not optimizted for fytokens, especially close to maturity.   
+- The marginal interest rate of fyDai that is offered by a pool at any time is equal to the ratio of fyDai reserves to the Dai minus 1
+
+Uniswaps Invariant is x * y = k, where x is the reserve balance of one currency, and y of the other, k is the constant product value. When a non- liquidity provider uses the pool to convert funds, they will move the constant product value by adding either x or y to the pool while removing the opposite respectively. In this process the constant product value is then change. In Uniswap v2 the process is simple there is a fee that is taken and this sum is taken from the trader prior to the tokens being put into the account, the remaining tokens are added to the pool. Dividing k by the reserve balance of the added currency will now give us the new reserve balance tof the currency being taken out. This is now subtracted from the starting reserve balance of the currency taken out to find the exact amount of tokens being taken out. If users continue trading one side more and more the amount of tokens they would be getting would disminish. (This means that large transfer compared to the balance of pool would be grossly more costly). This in effect causes an arbitrage opprutunit correcting the price of the market. 
+
+yield space introduces time into its invariant, with it being x^{1-t} + y^{1-t} = k where 0 \leq t < 1 and t = 1 when the yield dollar is close to the intialization.
+
+This should be thought of as a pricing formula for yield space, and it has the unique property that its interest rate, r, at any time is r = y/x - 1 where y is a fytoken and x is token
+
+arbitrage opprutunties should ony arise when interest rates change? Why does this matter?
+
+Uniswap / bancor/ Curve / Mstable, are implement different invariants with differing purposes however all lack certains needs of a time sensitive interest bearing tokne like fyToken, that is where the constant power sum formula comes in
+
+
 ### C.R.E.A.M Finance
 -CREAM is a decnetralized lending protocol for individuals and protocols to acess financial services.  Users are able to lend any supported assets on the markets and use the capital as collateral to borrow another supported asset. 
 
@@ -49,9 +67,9 @@ Iron Bank currently uses Chainlink oracle for its assets.
 ### AAVE Lending Pool (L2P)
 - Lending Pool is the main contract of the Aave protocol
 
--L2P is a lending platform aggregator for the aave lending pool to inhibit the use of under collaterized loans for specific protocols and dapps. 
+- L2P is a lending platform aggregator for the aave lending pool to inhibit the use of under collaterized loans for specific protocols and dapps. 
 
--Two type of providers liquidity provided on over-collartierized lending platforms like Aave, compound , dydx. These agents using these platforms who have unused collateral could delegate these borrowing lines to L2P. 
+- Two type of providers liquidity provided on over-collartierized lending platforms like Aave, compound , dydx. These agents using these platforms who have unused collateral could delegate these borrowing lines to L2P. 
 
 - Secondly there can be direct agents who provide liquidity to the L2P protocol.
 

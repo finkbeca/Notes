@@ -64,6 +64,14 @@ PostRelayedCall, provides mesasures for the paymaster contract to charge the use
 
 If a preferred relay is not configured, all transactions will be routed through third party relay servers for an extra fee.
 
+*** Rollups ***
+- A rollup can be thought of as a seperate blockchain, it again has a vm to execute smart contracts, this vm would act independently to EVM, instead it would be managed by a smart contract A rollup would execute transactions and process data, and allows Ethereum to receive this infromation and eventually store the results. 
+
+- The main difference between a rollup and the main chain would be how blocks are produced, rollsup do not operate in terms of a majority but instead as a single monitoring party. These decisions by this party are sent back to the main net 'Ethereum' where it is approved or reject. Note that this in itself is not a security issue for decentralization. All transaction calldata is still stored on the main chain with the computation being all done on the rollup.  Keeping transaction data on chain allows for all computations to be repeated on the ethereum base layer. This can act as a review process where the base layer can review and double check rollup confirmations. 
+
+- The review process differs whether ZK or Optimistic rollups are used but both means are much more efficient then computing on chain. 
+
+- Rollsup main purpose is to help move computation offchain, while keeping the data on chain, and reviewing it before the blocks are finalized acts as a very to verify the rollup transactions are right. 
 
 
 ## SideChains
