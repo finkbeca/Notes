@@ -48,3 +48,13 @@ bookCollapseSection: false
 - Signaling Equilibrium (A two factor market where 1 point is stabalaized by two seperate factors [Ivy Schools because students want to go there for high paying jobsl Ivy Schools because employers know only the smart people go there])
 - Regulatory Capture of occupational liscensing 
 - Gell-mann Amnesia Effects
+
+### Swaps
+- Simply put two parties payment streams. If one party had a bond that pays a coupon of 5% and party pays a floating rate, then the two parties can enter into a swap agreement and swap their interest streams. 
+- In traditional finance swaps are denoted by there notional value. 
+- Interest rate swaps come in two notes, basis swaps where two floating rates are switched  (think 6 month / 12 month)
+- Sometimes swaps currently also simply exchange the currency
+-LIBOR is an unsecured rate, the rate that mnay international banks can borrow unsecured funds with each other without collateral. This rate is agreed upon daily.  Libor is commonly used as a benchmark for swap interest rates. 
+- Swaps have no market, but instead like bonds are agreed upon over the party with an agreed upon party. 
+- The swap rate yield curve is used to benchmark rates of exchange.
+
