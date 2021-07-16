@@ -16,13 +16,14 @@ bookCollapseSection: false
 [ETh-Options Hegic](https://www.hegic.co/)  
 [Options Basics](https://hegic.gitbook.io/start/)  
 [London Mathematical Laboratory](http://lml.org.uk/)  
+[Eli Blog](https://eli.thegreenplace.net/)  
 
 ### Blogs
 [TheMoneyIllusion](https://www.themoneyillusion.com/)  
 [Enlightenmenteconomics](http://www.enlightenmenteconomics.com/blog/)  
 [Greg Mankiw](https://gregmankiw.blogspot.com/)  
 [Conversable Economist](https://conversableeconomist.blogspot.com/)  
-[Macro Musings](https://macromusings.libsyn.com/)  
+[Macro Musings](https://macromusings.libsyn.com/)    
 
 ***
 </br>
