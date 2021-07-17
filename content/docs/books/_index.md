@@ -49,6 +49,8 @@ bookComments: true
 [Twenty Lectures on Algorithmic Game Theory](https://www.goodreads.com/en/book/show/30423532-twenty-lectures-on-algorithmic-game-theory)  
 [Better Humanomics](https://www.goodreads.com/book/show/55551866-bettering-humanomics)  
 [The System: Who Owns the Internet, and How It Owns Us](https://www.goodreads.com/book/show/53261015-the-system)
+[Helgoland](https://www.amazon.com/Helgoland-Making-Sense-Quantum-Revolution/dp/0593328884)
+[You look like a thing and I love you](https://www.amazon.com/You-Look-Like-Thing-Love/dp/0316525227/ref=sr_1_1?crid=2HXM038TDG0HH&dchild=1&keywords=you+look+like+a+thing+and+i+love+you&qid=1626489693&s=books&sprefix=you+look%2Cstripbooks%2C214&sr=1-1)
 ## Notes
 [Constrained Writing](https://en.wikipedia.org/wiki/Constrained_writing)  
 [Oulipo](https://en.wikipedia.org/wiki/Oulipo)    

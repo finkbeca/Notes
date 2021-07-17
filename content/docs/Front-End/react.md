@@ -97,7 +97,7 @@ All react components that render DOM elements accept a style prop which sets the
 ```<Div style = {{padding: '20px, color: 'white'}}>{children}</div>```
 
 Another option is CSS and Classnames
-This is nice as it allows for the full power of CSS and is straightforward, however it is hard with large codebases, the compoents are not self-contained in a single js file and it works for DOM renderer only (No Native).
+This is nice as it allows for the full power of CSS and is straightforward, however it is hard with large codebases, the components are not self-contained in a single js file and it works for DOM renderer only (No Native).
 
 Lastly there is CSS-in-JS allowing us to have the benefits of inline and css. It can be used with the CSS-in-JS library
 ```import styled from 'styled-components' ```
@@ -166,7 +166,7 @@ render(<App> document.querySelector('#app'))
 ```
 ### User Input
 
-Traditionally user input is stored in the DOM and the data is extracted from the DOM to use in application logic. React simplieis this process by treating input components as stateless, an input element has a value prop and onChange prop giving us complete control over the input.
+Traditionally user input is stored in the DOM and the data is extracted from the DOM to use in application logic. React simply is this process by treating input components as stateless, an input element has a value prop and onChange prop giving us complete control over the input.
 
 ```
 function TextInput() {
@@ -236,7 +236,7 @@ function Card({ loading, error, title, subtitle }) {
 In this example there is an if else conditional where the else option is the ternary example from above.
 ### Lists and Keys
 Every react element can be passed the prop key. React uses key to determine the rendered elements identity. This helps us manage DOM more efficiently for example if we want to remove the first out of 15 posts on a website. 
-Internally React assigns an unique id to each element in order to match its order for rendering. The id of element is the id of its parent concanated with the index of the element within its parent.
+Internally React assigns an unique id to each element in order to match its order for rendering. The id of element is the id of its parent concatenated with the index of the element within its parent.
 Example 
 ```
 <div>  # 0
@@ -245,7 +245,7 @@ Example
 </div>
 <button/> # 1
 ```
-However we can also customily set the key value for example ```<div key="title"></div>``` has a identity #title
+However we can also customarily set the key value for example ```<div key="title"></div>``` has a identity #title
 
 Rendering Components through mapping an array of data
 ``` const data {
@@ -291,7 +291,7 @@ Hooks are different then regular functions and must be written in a specific way
 ### UseState
 useState lets us "remember" a value within a component function. A component function may called many times thus var or let may get reset. React can remember state variables with UseState.
 
-The useState hook takes a single argument our intial state and returns an array containing two elements: state: the current state, setState a function to update our state. UseState hook can store any type of value, number, string, array, object
+The useState hook takes a single argument our initial state and returns an array containing two elements: state: the current state, setState a function to update our state. UseState hook can store any type of value, number, string, array, object
 Example:
 ``` const [dogAge setdogAge] = useState(2)```
 <br/>
@@ -334,10 +334,10 @@ export default function App() {
 
 render(<App />, document.querySelector('#app'))
 ```
-Note: In the last two examples concering array we are not pushing an element to the array diceRools but return a new array of the two. We do this to make sure we are detect changes to the data as not doing this we might not realize there have been changes to an arary.
+Note: In the last two examples concerning array we are not pushing an element to the array diceRools but return a new array of the two. We do this to make sure we are detect changes to the data as not doing this we might not realize there have been changes to an array.
 ### UseReducer
-Similiar to useState but gives a more structured approach for updating complex values. It is most commonly used when our state has multiple sub-values like an objecting containing keys we want to update independently.  
-useReduced takes 2 arguments with an optional 3rd, reducer: a pure function that takes a state and an action and returns a new state value based on action, and intialState value, and intializer (optional), it returns the current state as well a dispatch function to update the state.
+Similar to useState but gives a more structured approach for updating complex values. It is most commonly used when our state has multiple sub-values like an objecting containing keys we want to update independently.  
+useReduced takes 2 arguments with an optional 3rd, reducer: a pure function that takes a state and an action and returns a new state value based on action, and intialState value, and initializer (optional), it returns the current state as well a dispatch function to update the state.
 Dispatch function takes an action calls the reducer to update the state
 Example:
 ```
@@ -405,7 +405,7 @@ use ```useReducer``` when there are subvalue that depend on each other
 
 ### useEffect
 we use the useEffect hook for calling functions with side effects within our components
-UseEffect has 2 arguments: callback a function with side effects, and depencies an optional array containing dependency values
+UseEffect has 2 arguments: callback a function with side effects, and dependencies an optional array containing dependency values
 
 ```
 import React, { useState, useEffect } from 'react'
@@ -429,7 +429,7 @@ export default function App() {
   )
 }
 ```
-In this example useEffect is called everytime the color changes. This in effect happens evertime we iterate and click the button calling setCount. If we do not have a dependency array our callback will run every time the component function runs. Rather if our dependency is empty ```[]``` it will only run once.
+In this example useEffect is called every time the color changes. This in effect happens every time we iterate and click the button calling setCount. If we do not have a dependency array our callback will run every time the component function runs. Rather if our dependency is empty ```[]``` it will only run once.
 Example:  
 ```
 import React, { useState, useEffect } from 'react'
@@ -465,7 +465,7 @@ render(<App />, document.querySelector('#app'))
 useMemo hook lets use memoize values and useCallback lets us memoize functions. The return values will be the same function. This could allow us to use a function as a dependency for another hook. 
 ### useRef
 useRef hooks allows us to create a mutable value that exists for the lifetime of the component.  We begin by wrapping a value like ``` const myRef = useRef(42)``` we can then use ```myref.current``` to access or update the value.
-All react components can be passed a ref prop in whcih case React will automatically assign the instance of the component to myRef.current. 
+All react components can be passed a ref prop in which case React will automatically assign the instance of the component to myRef.current. 
 Example:
 ```
 import React, { useState, useRef, useEffect } from 'react'

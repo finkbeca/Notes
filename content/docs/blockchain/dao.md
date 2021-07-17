@@ -12,12 +12,12 @@ Created: Aug 18, 2020 6:32 PM
 Note: We want to make a for profit DAO this relies on taxing or some form of monetization to people in or not in the DAO who are using a service provided by the DAO, this could be a tool, knowledge, etc.
 
 - For Profit relies on funding coming in to the DAO and to a central bank where it then distributed or kept by the DAO
-- Componnets
+- Components
     1. Central DAO register( Allows voting , adding etc )
     2. Contract in control of voting
     3. What do people vote with? We need token.
     4. A bank in the form of a contract
-    5. upgradability? dtl
+    5. upgradeability? dtl
     6. wrappers
 - Governance
 
@@ -31,7 +31,7 @@ Note: We want to make a for profit DAO this relies on taxing or some form of mon
     - Normal voting?
     - Time based voting
 
-    Voting Catergories
+    Voting Categories
 
     1. Add Member
     2. Vote for changes

@@ -8,7 +8,7 @@ bookToc: true
 ---
 ## Notes
 -Openzeppelin Counter contract is beneficial when you are trying to safely increment tokenIds.   
--ERC-721 metadata is buildt into ERC-721   
+-ERC-721 metadata is built into ERC-721   
 -Link the coin to a  metadata json folder not directly to an image. This makes many attributes much easier to handle. Can use ipfs to easily hash this.  
 
 

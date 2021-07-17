@@ -32,9 +32,9 @@ bookToc: true
     - Documents (store indexed JSON Docs)  
     - Counters  
     The database is given an address which can be broken down into 3 parts, the first part tells what protocol is in use, the second part is an IPFS multihash, and the third part is the name.  
-    Each entry in a database is also signed by who created it. ''' const indentity = db.identity ''' . This identity can then be used within OrbitDb.    
+    Each entry in a database is also signed by who created it. ''' const identity = db.identity ''' . This identity can then be used within OrbitDb.    
     You have access control to whom can write to a database. You can define a set of peers that can write to a database or allow anyone write access to a database. By default it is just the creator of the database 
-    Public databases are also supported by adding a * to the write access arary  
+    Public databases are also supported by adding a * to the write access array  
     Adding to databases:  
     - KeyValue: db.put()  
     - Log: db.add()  
@@ -56,8 +56,8 @@ bookToc: true
 ## IPFS Notes
 
 ### Files API
-The DAG APi allows you to use  unqiue and primitive data structures offered by IPLD within IPFS.  Its method in js-ipfs takes the format ipfs.dag.someMethod()
-DAG Api is the most generic approach to adding data to the IPFS node. The files API on the otherhand prepare files to pbe placed in the network and ensures that IPFS knows how to access them. It is made of two parts: Regular Files API and Mutable File System
+The DAG APi allows you to use  unique and primitive data structures offered by IPLD within IPFS.  Its method in js-ipfs takes the format ipfs.dag.someMethod()
+DAG Api is the most generic approach to adding data to the IPFS node. The files API on the other hand prepare files to pbe placed in the network and ensures that IPFS knows how to access them. It is made of two parts: Regular Files API and Mutable File System
 MFT provides an API to replicate file systems such as ``` mkdir ls cp``` mimicking how you organize directories on a computer. In Regular Files API it uses aa bare bones approach to mangage files in IPFS. MFT uses ``` ipfs.files.someMethod()``` while Regular Files API uses ``` ipfs.someMethod()```
 ```ipfs.add(data, [options])```
 Thus we can for example:
@@ -73,7 +73,7 @@ mode: Number
 We can also use AddAll to do this with multiple files ```ipfs.addAll([catPic, dogPic, giraffePic])```
 this returns an async iterable allowing us to iterate over the values one by one.
 
-To retrive an file from IPFS you can use CID. For example, ```ipfs.cat(ipfsPath, [options])``` ipfsPath in one context can be the cid. Note Buffer is a raw collection of bytes that makes no assumptions about encoding. 
+To retrieve an file from IPFS you can use CID. For example, ```ipfs.cat(ipfsPath, [options])``` ipfsPath in one context can be the cid. Note Buffer is a raw collection of bytes that makes no assumptions about encoding. 
 ```
 const bufferedContents = await toBuffer(ipfs.cat('QmWCscor6qWPdx53zEQmZvQvuWQYxx1ARRCXwYVE4s9wzJ')) // returns a Buffer
 const stringContents = bufferedContents.toString() // returns a string
@@ -94,7 +94,7 @@ ipfs.addAll([
 ```
 This director we made is immutable it does not act as a normal directory, and we can not add new files to it.
 Note: two directories with identical CID are guaranteed to have identical contents. To look at the content of a director you can use ```ipfs.ls(ipfsPath)```
-If we use a director we now have 4 ways to find the file using cat. We can go by the cid. the full ipfs path ipfs/... the cid of the director and the files relative path or the ipfs full path of the directory and the files relative path from there. Wrapwithdirectory allows us to use human_readable filenames in ipfs paths making it a possible reason to wrap files in directories. When we are using ipfs path and just not cid for reference we need to include /ipfs/ at the start at there are other networking protcols that use the same CID
+If we use a director we now have 4 ways to find the file using cat. We can go by the cid. the full ipfs path ipfs/... the cid of the director and the files relative path or the ipfs full path of the directory and the files relative path from there. Wrapwithdirectory allows us to use human_readable filenames in ipfs paths making it a possible reason to wrap files in directories. When we are using ipfs path and just not cid for reference we need to include /ipfs/ at the start at there are other networking protocols that use the same CID
 
 If you need other metadata about a file or a directory you can get it by calling ```ipfs.get(ipfsPath)```
 Get will run on a directory and on any subdirectories recursively.

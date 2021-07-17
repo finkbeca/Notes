@@ -6,7 +6,11 @@ bookToc: true
 
 # Blockchain
 
- A topic I have been  passionate about for some time now. 
+## Databases
+Reserach Databases of published papers: 
+[Cryptoeconomic System](https://cryptoeconomicsystems.pubpub.org/vol1-1)
+[Blockchain Research Network](https://www.zotero.org/groups/2216205/blockchain_research_network/items/QXNEQXJ9/library)
+
 
 ## Ethereum
 [Ethereum Foundation](https://ethereum.org/en/)  
@@ -34,11 +38,11 @@ Uses metatransactions (collect calls) to minimize onboarding and for UX friction
 - Enables more privacy for accounts  
 - Reduces onboarding cost for new members  
 
-This works as a relay server can send a user's transaction for them and pay themselves for the gas cost. Instead of signing an Ethereum trasaction, users sign a message containing information about a transaction that they wish to be executed and sent ona relay server. The relay server is then refunded for the gas cost by the paymaster contract.  
+This works as a relay server can send a user's transaction for them and pay themselves for the gas cost. Instead of signing an Ethereum transaction, users sign a message containing information about a transaction that they wish to be executed and sent ona relay server. The relay server is then refunded for the gas cost by the paymaster contract.  
 
-Each dapp having an relay service , provides this service at-cost to each user. If one dapp's relay server would of went down then the transactios can be routed to another dapp's relay server with a premenium fee. This stregthens the overall network. 
+Each dapp having an relay service , provides this service at-cost to each user. If one dapp's relay server would of went down then the transaction can be routed to another dapp's relay server with a premium fee. This strengthens the overall network. 
 
-In the GSn all acesss and refund logic is implemented within the paymaster contract. A paymaster has a gas tank of ETH in the RelayHub and can implement logic to decide whether to accept, or reject a meta transaction. (This could because it only accepts whitelisted users, or some other contract method used for onboarding).
+In the GSn all access and refund logic is implemented within the paymaster contract. A paymaster has a gas tank of ETH in the RelayHub and can implement logic to decide whether to accept, or reject a meta transaction. (This could because it only accepts whitelisted users, or some other contract method used for onboarding).
 
 To use meta transactions ```msg.sender``` is replaced with ```_msgSender()```.
 
@@ -58,16 +62,16 @@ Note: If using other third party contracts they may  be unsafe to mix with BaseR
 
 In order to start paying the meta-transaction fees, a Paymaster contract is needed. This contract is inherited from BasePayMaster, and requires implementations of preRelayedCall and postRelayed Call. The contract is lastly needed to be deployed and configured with the RelayHub address. 
 
-Paymaster will be charged for tranactions after it consumes the amount of gas limited by ``` GasLimits.acceptanceBudget``` even it reverts the call. Due to this be careful how you manage transactions, and only accept transactions you trust to go through. Some ways to do this include, onboarding functions, whitelisting users, delegating this procedure of chain, or charging in tokens.
+Paymaster will be charged for transactions after it consumes the amount of gas limited by ``` GasLimits.acceptanceBudget``` even it reverts the call. Due to this be careful how you manage transactions, and only accept transactions you trust to go through. Some ways to do this include, onboarding functions, whitelisting users, delegating this procedure of chain, or charging in tokens.
 
-PostRelayedCall, provides mesasures for the paymaster contract to charge the user for the call, other book keeping methods, as well as a good estimate of the transaction cost
+PostRelayedCall, provides measures for the paymaster contract to charge the user for the call, other book keeping methods, as well as a good estimate of the transaction cost
 
 If a preferred relay is not configured, all transactions will be routed through third party relay servers for an extra fee.
 
 *** Rollups ***
-- A rollup can be thought of as a seperate blockchain, it again has a vm to execute smart contracts, this vm would act independently to EVM, instead it would be managed by a smart contract A rollup would execute transactions and process data, and allows Ethereum to receive this infromation and eventually store the results. 
+- A rollup can be thought of as a separate blockchain, it again has a vm to execute smart contracts, this vm would act independently to EVM, instead it would be managed by a smart contract A rollup would execute transactions and process data, and allows Ethereum to receive this information and eventually store the results. 
 
-- The main difference between a rollup and the main chain would be how blocks are produced, rollsup do not operate in terms of a majority but instead as a single monitoring party. These decisions by this party are sent back to the main net 'Ethereum' where it is approved or reject. Note that this in itself is not a security issue for decentralization. All transaction calldata is still stored on the main chain with the computation being all done on the rollup.  Keeping transaction data on chain allows for all computations to be repeated on the ethereum base layer. This can act as a review process where the base layer can review and double check rollup confirmations. 
+- The main difference between a rollup and the main chain would be how blocks are produced, rollups do not operate in terms of a majority but instead as a single monitoring party. These decisions by this party are sent back to the main net 'Ethereum' where it is approved or reject. Note that this in itself is not a security issue for decentralization. All transaction calldata is still stored on the main chain with the computation being all done on the rollup.  Keeping transaction data on chain allows for all computations to be repeated on the ethereum base layer. This can act as a review process where the base layer can review and double check rollup confirmations. 
 
 - The review process differs whether ZK or Optimistic rollups are used but both means are much more efficient then computing on chain. 
 

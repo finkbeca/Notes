@@ -36,7 +36,7 @@ NEAR Token
 - Determine how network resources are allocated and where its future direction will go through governance
 - General
 
-NEAR is a decentralized application platform which runs atop the NEAR Protocol blockchain. The blockchain runs on hundreds of nodes that are permissionless and performant. Near is a platform which has acess to a shared and secure pool of money, identity and data.
+NEAR is a decentralized application platform which runs atop the NEAR Protocol blockchain. The blockchain runs on hundreds of nodes that are permissionless and performant. Near is a platform which has access to a shared and secure pool of money, identity and data.
 
 "one token equals one vote" to govern system
 
@@ -44,7 +44,7 @@ Accounts have human-readable names  and accounts offer "single sign on " functio
 
 1. Threshold proof of stake
 
-    ensure that computations run are correct by requiring near tokens as collateral for validatiors. this is the fundamental mechanism for securing the network. The threshold for participating in the system is set algorithmically at the lowest level to broadcast participation of validating days
+    ensure that computations run are correct by requiring near tokens as collateral for validators. this is the fundamental mechanism for securing the network. The threshold for participating in the system is set algorithmically at the lowest level to broadcast participation of validating days
 
 2. Node operators are paid for their service a fixed percentage of total supply as a security fee  of roughly 4.5% annualized.
 3. The protocol treasury receives 0.5 total supply to reinvest into the ecosystem
@@ -64,7 +64,7 @@ Storage is a long term scare asset for an application to use it they must mainta
 
 Accounts and contracts are assigned to a shard because of usage of such contracts is not equal the size of some shards are different then others. Near supports resharding which gets rid of this. Which balances shards periodically based on conditions. The end result will be a set of shards that are reasonably the same.
 
-During each day stats are collected that evaluate contract usage during previous epochs and its storage. Contracts are then bucketed into grooups such that each bucket roughly the same expected characteristics.
+During each day stats are collected that evaluate contract usage during previous epochs and its storage. Contracts are then bucketed into groups such that each bucket roughly the same expected characteristics.
 
 As need shards are add the price per set goes down and more validators are added. If storage found in a previous epoch exceeds a certain threshold a number of new shards will be allocated increasing the number of buckets.
 
@@ -74,7 +74,7 @@ Hidden validators are compensates for validation and signing off on the validity
 
 Contract Rewards are a 30% fee that is given to developer from the transaction. 
 
-Fisherman are observing nodes who detect and report bad behavior, they are not rewarded for operating such a node but typcally have outside motivation. 
+Fisherman are observing nodes who detect and report bad behavior, they are not rewarded for operating such a node but typically have outside motivation. 
 
 Two main types of malicious behavior possible 
 
@@ -83,14 +83,14 @@ Two main types of malicious behavior possible
 
 ## General
 
-Near uses a sharding approaching which allows the network to increases its capacity by spllitting the network nodes into multiple shards when usage is high enough and parallelizing computation across those shards Network can scale continuously with demand.
+Near uses a sharding approaching which allows the network to increases its capacity by splitting the network nodes into multiple shards when usage is high enough and parallelizing computation across those shards Network can scale continuously with demand.
 
 - Intra-sharding
 - cross-shard
 
 NEAR Protocol assumes that transactions will touch multiple shards by defaults 
 
-NEAR uses a staking mechanism called "Thereholded Proof of stake" which is specifically designed to be both deterministic and broadly fair so it doesn't incentivize pooling of large validations
+NEAR uses a staking mechanism called "Threshholded Proof of stake" which is specifically designed to be both deterministic and broadly fair so it doesn't incentivize pooling of large validations
 
 The near platform == ethereum platform where smart contracts are written to where front facing applications are found. 
 
@@ -113,7 +113,7 @@ Key technology:
 
 - Sharding: The system is designed to scale horizontally and near infinitely by distributing computation parallelized shards.
 - Consensus: Consensus is achieved across all nodes which make up network operators across all shards
-- Staking Selection and Game Theory: To Partcipate in the validation process, stakers are selected useing a secure and radom process who disributes seats acrosss parties and provides icentivites for them to operate with good behavior.
+- Staking Selection and Game Theory: To Participate in the validation process, stakers are selected using a secure and radom process who distributes seats across parties and provides incentives for them to operate with good behavior.
 - Randomness, can tolerate 1/3  bad actors before liveness is affected and 2/3 before outputs are effected
 
 ### Sharding
@@ -142,7 +142,7 @@ A beacon chain verifies the state transitions of all of the other chains using a
 
 ### Nightshade
 
-Nightshade modifies typical sharding abstraction and assumes that all of the other shards combine to produce a single block, Blocks are produced with a normal cadence regardless whether each shard has reached its block height.  For each indiidual shard and period a single validator is assigned to produce its chunk. 
+Nightshade modifies typical sharding abstraction and assumes that all of the other shards combine to produce a single block, Blocks are produced with a normal cadence regardless whether each shard has reached its block height.  For each individual shard and period a single validator is assigned to produce its chunk. 
 
 Hidden validators are a small committee for each shard who verify each chunk, however instead of being assigned a shard they are given a shard id through a verifiable random function (**Look into VRF !!)**
 
@@ -152,18 +152,19 @@ The number of hidden validators assigned to a block is randomly determined. If t
 
 Fishermen are 3rd party node operators that can provide the same fraud proof as a hidden validators.
 
-Think of tokens as an open api, tradtionally if someone wanted to use Reddits karma points in an application they would have to make an agreement with Reddit and then agree to use a private api, if karma was tokenized then it would be open for all and only restricted by the contract restrictions.
+Think of tokens as an open api, traditionally if someone wanted to use Reddit
+s karma points in an application they would have to make an agreement with Reddit and then agree to use a private api, if karma was tokenized then it would be open for all and only restricted by the contract restrictions.
 
 ## Random
 
-1. RANDAO unpredictable but biasable liveness depends on the protocol
+1. RANDAO unpredictable but bias-able liveness depends on the protocol
 2. RANDAO and VDF 
 3. Threshold signatures
 4. RandShare
 
 ### Roadmap
 
-Product was not buildt based of the whiteppaer but first an MVP was build with developer tooling, a test wallet and a not-a-blockchain smart contract backend called DevNet
+Product was not built based of the whitepaper but first an MVP was build with developer tooling, a test wallet and a not-a-blockchain smart contract backend called DevNet
 
 A hackathon took place where the team learned more about how smart contracts interact with a multi-shardered setup and the tools needed for developments. With this changes were made to the model and nightshade was made.
 <br>

@@ -45,14 +45,14 @@ Note: Commonly written as {{<katex>}}\cup \{X: X\in \mathcal{C} \} {{</katex>}}
 - Cartesian product of A and B; it is characterized by the fact that {{<katex>}} A \times B = \{ x : x = (a.b) \}  {{</katex>}} for some a in A and some b in B  
 - A set is an equivalence relation if it is reflexive, symmetric, and transitive.  
 - If X and Y are sets, a function from (or on) X to (or into) Y is a relation f such that dom f = X and such that for each x in X there is a unique element y in Y with (x,y) in f.   
-- For relations in general and functions in particular  there are concpets of domain and range. The domain of a function f from X into Y is definition equal to X, but its range need not be equal to Y, the range consists of those elements y of Y for which there exists an x in X such that f(x) = y  
+- For relations in general and functions in particular  there are concepts of domain and range. The domain of a function f from X into Y is definition equal to X, but its range need not be equal to Y, the range consists of those elements y of Y for which there exists an x in X such that f(x) = y  
 - A function that always maps distinct elements onto distinct elements is called one-to-one. 
 ## Composites  
 - Functional composition may not be commutative, but it is always associative 
 ## Numbers  
 - {{<katex>}} 0 = \emptyset {{</katex>}}, {{<katex>}} 1 = \{ \emptyset \} {{</katex>}}, {{<katex>}}2 = \{0, 1\}  {{</katex>}} or {{<katex>}} 2 = \{ \emptyset, \{ \emptyset \} \} {{</katex>}}...  
-- **Axiom of Infinity** There exists a set containing 0 and containing the sucessor of each of its elements  
-- A natural number by definition is the element of the minimal sucessor set {{<katex>}} \omega {{</katex>}}  
+- **Axiom of Infinity** There exists a set containing 0 and containing the successor of each of its elements  
+- A natural number by definition is the element of the minimal successor set {{<katex>}} \omega {{</katex>}}  
 - A family {{<katex>}}\{ x_i \} {{</katex>}} whose index set is either a natural number or else the set of all natural numbers is called a sequence.   
 - Two natural numbers are ALWAYS comparable.  
 - If m includes n or m is a proper subset of n we can write this as m < n and say that m is less than n.  
@@ -66,16 +66,16 @@ Note: Commonly written as {{<katex>}}\cup \{X: X\in \mathcal{C} \} {{</katex>}}
 - every well ordered set is totally ordered.  
 - **WEll ordering theorem**: Every set can be well ordered.  
 ## Ordinal Numbers
-- **Axiom of subsitution**: If S(a,b) is a sentence such that for each a in a set A the set {{<katex>}}\{ b: S(a,b) \} {{</katex>}} can be formed then there exists a function F with domain A such that F(a) = {{<katex>}}\{ b:S(a,b) \} {{</katex>}} for each a in A.  
+- **Axiom of substitution**: If S(a,b) is a sentence such that for each a in a set A the set {{<katex>}}\{ b: S(a,b) \} {{</katex>}} can be formed then there exists a function F with domain A such that F(a) = {{<katex>}}\{ b:S(a,b) \} {{</katex>}} for each a in A.  
 - {{<katex>}} \omega + 3 = 0<1<2<3<...<...<0<1<2{{</katex>}}  
 - {{<katex>}} \omega + 1 = 0<1<2<3<...<...<0{{</katex>}}  
 - {{<katex>}} \aleph_0 = \omega {{</katex>}}
 - For any ordinal {{<katex>}}\mathcal(a) {{</katex>}}, {{<katex>}} \mathcal(a) + 0 = 0 + \mathcal(a) = \mathcal(a) {{</katex>}}.  
-- Not every transfinite ordinal number has an immediate predeccsor; the ones that do not are called limit numbers.
-- Ordinal arithemetic is not entirely communative but it is associative.
-- If both ordinals are finite than arithmetic is communative but not if one is infinite.
+- Not every transfinite ordinal number has an immediate predecessor; the ones that do not are called limit numbers.
+- Ordinal arithmetic is not entirely commutative but it is associative.
+- If both ordinals are finite than arithmetic is commutative but not if one is infinite.
 - **Counting Theorem** Each well ordered set is similar to a unqiue ordinal number  
-- Every subsetof w is countable. Thus {{<katex>}}\omega - \{1\} {{</katex>}} is countable. 
+- Every subset of w is countable. Thus {{<katex>}}\omega - \{1\} {{</katex>}} is countable. 
 
 ## Other
 - **Cantor's Theorem** Every set is strictly dominated by its power set. 

@@ -41,13 +41,13 @@ bookCollapseSection: false
 
 - Signaling Equilibrium
 - Two Factor Markets (ce. Craiglist buyers rely on sellers ; sellers rely on buyers)
-- Nash Equilibrium is the change of state when everyone make thier best moves from the previous nash equilibrium
+- Nash Equilibrium is the change of state when everyone make their best moves from the previous nash equilibrium
 - Pareto Optimum a state where it is impossible to make any change where one agent is better without making any other agents worse off
-- Coordination Problem (Everyone would be better off to switch but if one person goes it is ueseless)
+- Coordination Problem (Everyone would be better off to switch but if one person goes it is useless)
 -Asymmetric information (Information where there is not validity to truth [asking if a car is a lemon; you can't trust the response even if they say no])
 - Inferior Equilibrium (No one player acting poorly but the system as a whole)
-- Signaling Equilibrium (A two factor market where 1 point is stabalaized by two seperate factors [Ivy Schools because students want to go there for high paying jobsl Ivy Schools because employers know only the smart people go there])
-- Regulatory Capture of occupational liscensing 
+- Signaling Equilibrium (A two factor market where 1 point is stabilized by two separate factors [Ivy Schools because students want to go there for high paying jobs Ivy Schools because employers know only the smart people go there])
+- Regulatory Capture of occupational licensing 
 - Gell-mann Amnesia Effects
 
 ### Swaps
@@ -55,7 +55,7 @@ bookCollapseSection: false
 - In traditional finance swaps are denoted by there notional value. 
 - Interest rate swaps come in two notes, basis swaps where two floating rates are switched  (think 6 month / 12 month)
 - Sometimes swaps currently also simply exchange the currency
--LIBOR is an unsecured rate, the rate that mnay international banks can borrow unsecured funds with each other without collateral. This rate is agreed upon daily.  Libor is commonly used as a benchmark for swap interest rates. 
+-LIBOR is an unsecured rate, the rate that many international banks can borrow unsecured funds with each other without collateral. This rate is agreed upon daily.  Libor is commonly used as a benchmark for swap interest rates. 
 - Swaps have no market, but instead like bonds are agreed upon over the party with an agreed upon party. 
 - The swap rate yield curve is used to benchmark rates of exchange.
 

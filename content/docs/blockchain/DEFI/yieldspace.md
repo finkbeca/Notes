@@ -17,4 +17,4 @@ bookToc: true
 
 - arbitrage opportunities should only arise when interest rates change? Why does this matter?
 
-- Uniswap / bancor/ Curve / Mstable, are implement different invariants with differing purposes however all lack certain needs of a time sensitive interest bearing tokne like fyToken, that is where the constant power sum formula comes in
+- Uniswap / bancor/ Curve / Mstable, are implement different invariants with differing purposes however all lack certain needs of a time sensitive interest bearing token like fyToken, that is where the constant power sum formula comes in

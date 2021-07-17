@@ -62,11 +62,11 @@ A group is a nonempty set G equipped with a binary operation * that satisfies th
 - There exists an element in a group G known as the identity such that {{<katex>}} a \dot e = a = e \dot a {{</katex>}}  
 - There exists an inverse for a group st {{<katex>}} a * d = e  {{</katex>}} and {{<katex>}} d * a = e{{</katex>}}  
 A group is abelian if it is commutative (a * b = b * a) 
-- A group G has a unique identity element, a unique inverse, and cancelation holds.
+- A group G has a unique identity element, a unique inverse, and cancellation holds.
 - if G is a group then {{<katex>}} (ab)^{-1} = b^{-1}a^{-1} {{</katex>}}  and (a^{-1})^{-1} = a
 - A subset H of a group G is a subgroup of G if H itself a group under the operation in G  
 - Let G and H be groups with the group operation by *. G is isomorphic to a group H if there exists a bijective function from G to H that also preserves the property  {{<katex>}} f(a * b) = f(a) * f(b) {{</katex>}}   
-- Let G and H be groups, a function is said to be a homorphism if {{<katex>}} f(a * b) = f(a) * f(b) {{</katex>}}   
+- Let G and H be groups, a function is said to be a homomorphism if {{<katex>}} f(a * b) = f(a) * f(b) {{</katex>}}   
 - Let K be a subgroup of a group G. Then the relation of congruence modulo K is reflexive, symmetric, and transitivity.     
 - Let K be a subgroup of a group G then {{<katex>}} a \equiv c (mod K)  {{</katex>}} iff {{<katex>}} Ka = kc{{</katex>}}   
 - If G has a n order then G is isomorphic to {{<katex>}} \mathbb{Z}_2 {{</katex>}} this follows all the way to when G has an order of 7  
