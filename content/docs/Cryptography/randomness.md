@@ -52,5 +52,5 @@ Every CPRNG should satisfy that no poly-time algo could predict the next bit bet
 
 PoS based hardware random generator. 
 
-Cardano using their PoS system for a random number generator. 
-
+Cardano using their PoS system for a random number generator.   
+[Drand](https://research.protocol.ai/talks/drand-distributed-bias-resistant-unpredictable-and-publicly-verifiable-randomness/)  

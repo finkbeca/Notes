@@ -7,5 +7,5 @@ math: true
 
 # Notes
 
-
+- [Elanor Cryptography PHD substack](Inor.substack.com)  
 

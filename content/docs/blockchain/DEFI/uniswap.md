@@ -30,3 +30,7 @@ bookToc: true
 - unused ticks are tracked in a tick bitmap where uninitialized ticks are set to 0 and initialized are set to 1.
 
 - a LP earns transaction fees in v3 only when the price of the asset is within one of there intervals, if multiple users allocate liquidity to the same price they are rewarded proportionally to their liquidity. 
+
+- Range order let someone provide liquidity over a set range, when the full range is passed they can then withdrawal their target asset, on top of this the range order incurs fees when within such range. 
+
+- For range orders  depending on whether a strike price is below or above the current spt price the  position behaves as a short cash secured put or covered call. 

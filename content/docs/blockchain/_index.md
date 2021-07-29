@@ -30,6 +30,7 @@ Reserach Databases of published papers:
 [Vyper by Example](https://vyper.readthedocs.io/en/latest/vyper-by-example.html) 
 [Building Smart Contracts on AAVE](https://www.chainshot.com/learn/aave)  
 [Mechanism Capital Research Articles](https://www.mechanism.capital/)
+[Femboy Capital MEV Summary](https://femboy.capital/SummitSummaryPt1)
 ***GSN***
 Uses metatransactions (collect calls) to minimize onboarding and for UX friction. It takes away the need for clients to have to have gas to pay for transaction fees. 
   
@@ -85,7 +86,8 @@ EVM Side Chains
 [Solana](https://solana.com/)  
 [NEAR](https://near.org/)  
 [Polkadot](https://polkadot.network/)  
-[Findora](https://findora.org/)  
+[Solana basics](https://2501babe.github.io/posts/solana101.html)
+
 
 ## Bitcoin
 [Script](https://en.bitcoin.it/wiki/Script) Bitcoin Script  
