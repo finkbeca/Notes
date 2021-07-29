@@ -11,6 +11,14 @@ math: true
 [ZK Proofs for Children](http://pages.cs.wisc.edu/~mkowalcz/628.pdf)  
 [ZK proofs resources](https://ethresear.ch/t/zero-knowledge-proofs-starter-pack/4519)
 
+## Papers
+- [Groth: How to leak a secret and spend a coin](https://link.springer.com/content/pdf/10.1007/978-3-662-46803-6_9.pdf) 
+- [Groth: Efficient ZK args for arithmetic circuits](https://link.springer.com/chapter/10.1007/978-3-662-49896-5_12)   
+- [Groth zk-SNARK](https://eprint.iacr.org/2019/641)
+- [ZK Proofs for Set Membership](https://zkproof.org/2020/02/27/zkp-set-membership/))
+- [Groth: OG SNARK paper](https://eprint.iacr.org/2016/260.pdf)
+- [MPC basics](https://eprint.iacr.org/2017/1050)
+
 ## Notes
 Zcash is derived from the fact that shielded transactions can be fully encrypted on the blockchain but still verified using ZK-SNARK proofs
 
