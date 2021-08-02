@@ -42,7 +42,7 @@ Axiom Schema
   [Computability and Logic](https://www.goodreads.com/book/show/1556746.Computability_and_Logic?ac=1&from_search=true&qid=zrLHnTlIxG&rank=1)  
   [Probability Theory: The logic of science](https://smile.amazon.com/Probability-Theory-The-Logic-Science/dp/0521592712/)  
   [Probalistic reasoning in intelligent systems](https://smile.amazon.com/Probabilistic-Reasoning-Intelligent-Systems-Representation/dp/1558604790/)  
-  [ALl of Statistics](https://www.amazon.com/All-Statistics-Statistical-Inference-Springer/dp/0387402721)    
+  [All of Statistics](https://www.amazon.com/All-Statistics-Statistical-Inference-Springer/dp/0387402721)    
   [An Introduction to Decision Theory](https://www.goodreads.com/book/show/11729796-an-introduction-to-decision-theory?ac=1&from_search=true&qid=xdqDQGz58l&rank=1)  
   [The logic of Provability](https://www.goodreads.com/book/show/1572785.The_Logic_of_Provability?ac=1&from_search=true&qid=wge8W9e0gl&rank=1)  
   [Introduction to Elliptic Curves and Modular Forms](https://www.goodreads.com/book/show/1874243.Introduction_to_Elliptic_Curves_and_Modular_Forms)
