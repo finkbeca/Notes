@@ -168,5 +168,7 @@ Product was not built based of the whitepaper but first an MVP was build with de
 
 A hackathon took place where the team learned more about how smart contracts interact with a multi-shardered setup and the tools needed for developments. With this changes were made to the model and nightshade was made.
 <br>
+<figure>
+        <img src="./Untitled.png" />
+</figure> 
 
-![](Untitled.png)

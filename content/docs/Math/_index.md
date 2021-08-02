@@ -17,6 +17,9 @@ katex: true
 - Taxicab Metric  → P = 1
 - Euclidean Metric  → P = 2
 
+<figure>
+        <img src="./animation.gif" />
+</figure>
 
 ZFC  
 Axiom Schema  
