@@ -46,7 +46,7 @@ There is not a universal definition of a proper cone but it typically refers to 
 Hyperplane separation theorem
 Let A and B be two disjoint nonempty convex subsets of {{<katex>}}\mathbb{R^n}{{</katex>}}. Then {{<katex>}}\exists v \in \mathbb{R_+^n}, c \in \mathbb{R}{{</katex>}} st {{<katex>}} \langle x,y \rangle \geq c,  \langle y,v \rangle \leq c \forall x \in A y \in B {{</katex>}}. In other words the hyperplane {{<katex>}} \langle \cdot, v \rangle = c{{</katex>}} where v is the normal vector separates A and B. 
 
-Let K be a non-empty closed subset of {{</katex>}}\mathbb{R^n}{{<katex>}} then it follows there there exists some unique vector in K of minimum norm length. 
+Let K be a non-empty closed subset of {{<katex>}}\mathbb{R^n}{{</katex>}} then it follows there there exists some unique vector in K of minimum norm length. 
 
 A real value function is called convex if the line segment between any two points on the graph lies above the graph of two points. 
 
