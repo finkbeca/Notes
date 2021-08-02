@@ -11,7 +11,7 @@ bookCollapseSection: false
 ## Notes 
 Suppose {{<katex>}}x_1 \neq x_2{{</katex>}} and {{<katex>}}y = \theta x_1 + (1- \theta)x_2 {{<katex>}} where {{</katex>}}\theta \in \mathbb{R}{{</katex>}} and the thus forms the line passing through the points {{<katex>}}x_1,x_2{{</katex>}}.
 
-This is known as an affine set , more formally a set {{</katex>}}C \subseteq \mathbb{R}^n{{</katex>}} is known as affine if the line through two distinct points in C lies in C.
+This is known as an affine set , more formally a set {{<katex>}}C \subseteq \mathbb{R}^n{{</katex>}} is known as affine if the line through two distinct points in C lies in C.
 
 This can be expanded to any arbitrary linear combination assuming that all the points in C sum to 1.
 
