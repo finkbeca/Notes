@@ -81,9 +81,9 @@ Note: Commonly written as {{<katex>}}\cup \{X: X\in \mathcal{C} \} {{</katex>}}
 - **Cantor's Theorem** Every set is strictly dominated by its power set. 
 
 
-![]("./ordinal.png")
 
-{{< figure src="./ordinal.png" >}}
+
+
 {{< figure src ="/img/ordinal.png" >}}
 <figure>
         <img src="/docs/Math/ordinal.png" />
