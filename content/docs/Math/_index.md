@@ -21,6 +21,9 @@ katex: true
         <img src="./animation.gif" />
 </figure>
 
+{{< embed-pdf url=".docs/Math/217_HW.pdf" >}}  
+{{< embed-pdf url="./217_HW.pdf" >}}  
+
 ZFC  
 Axiom Schema  
 - AOC is equivalent to For All Vector Spaces there exists a basis

@@ -11,7 +11,7 @@ katex: true
 
 [Linear Algebra with Applications](https://www.goodreads.com/book/show/144938.Linear_Algebra_with_Applications)  
 
-{{< embed-pdf url="./docs/Math/217_HW.pdf" >}}  
+{{< embed-pdf url="./217_HW.pdf" >}}  
 
 
 
