@@ -83,7 +83,7 @@ Note: Commonly written as {{<katex>}}\cup \{X: X\in \mathcal{C} \} {{</katex>}}
 
 ![]("./ordinal.png")
 
-{{<figure src=./ordinal.png>}}
+{{<figure src="./ordinal.png">}}
 <figure>
         <img src="/docs/Math/ordinal.png" />
 </figure>
