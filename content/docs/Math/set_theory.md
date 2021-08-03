@@ -85,6 +85,3 @@ Note: Commonly written as {{<katex>}}\cup \{X: X\in \mathcal{C} \} {{</katex>}}
 
 
 {{< figure src ="/img/ordinal.png" >}}
-<figure>
-        <img src="/docs/Math/ordinal.png" />
-</figure>

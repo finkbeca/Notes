@@ -14,7 +14,7 @@ This is my digital garden :deciduous_tree:, a place for me to document things in
 ***
 </br>
 
-I am a sophmore at the Unversity of Michigan studying data science and computer science. I am a lover of all tech, but especially blockchain and decentralization. Web3 is coming and I am excited to being a part of the growing developers moving to decentralized products.   
+I am a undergraduate at the University of Michigan studying computer science and math. Interest include Cryptography, Mechanism Design and Defi. I love the Web3 space and am passionate about building open source and public.   
 </br>
 
 ## Purpose

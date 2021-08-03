@@ -167,8 +167,8 @@ s karma points in an application they would have to make an agreement with Reddi
 Product was not built based of the whitepaper but first an MVP was build with developer tooling, a test wallet and a not-a-blockchain smart contract backend called DevNet
 
 A hackathon took place where the team learned more about how smart contracts interact with a multi-shardered setup and the tools needed for developments. With this changes were made to the model and nightshade was made.
+{{< figure src ="/img/Untitled.png" >}}
 
-{{< figure src = "./Untitled.png" >}}
 <figure>
       <img src="./Untitled.png" />
 </figure> 
