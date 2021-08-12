@@ -12,3 +12,4 @@ katex: true
 
 ## Links
 [Pleco Dictionary](https://www.pleco.com/)
+[Hanzi Writer](https://hanziwriter.org/demo.html)

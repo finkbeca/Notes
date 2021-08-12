@@ -59,3 +59,20 @@ bookCollapseSection: false
 - Swaps have no market, but instead like bonds are agreed upon over the party with an agreed upon party. 
 - The swap rate yield curve is used to benchmark rates of exchange.
 
+
+### Options, Futures, Derivatives,
+
+In tradfi a clearing house takes care of the credit risk by requiring each of the traders to deposit funds (margin) when acting on an future or option trade.   
+
+A forward contract is an agreement to buy or sell an asset at a certain fixed time in the future for a specific strike price.  
+One party assumes a long positions and agrees to buy the underlying asset, at a certan date and price, the other party assumes a short position agreeing to sell the asset at a fixed time and price.
+
+payoff for a long position in a forward contract is Spot price (S_k) - k where k is the strike price  
+
+payoff for a short position in a forward contract is k - s_k  
+
+Forward contracts are typically OTC products
+
+Future contracts are similiar to forward contracts but take place on an exchange. 
+
+A call option gives the holder a right to buy an underlying at a certain price for a certain, while a put option gives the holder the right to sell the underlying at a certain price and date. This is a right not a forced action.  

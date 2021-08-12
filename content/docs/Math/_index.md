@@ -21,11 +21,9 @@ katex: true
         <img src="./animation.gif" />
 </figure>
 
-Linear Algebra notes 
-
 {{< embed-pdf url=".docs/Math/217_HW.pdf" >}} 
-
  
+{{< embed-pdf url="/img/217_HW.pdf" >}}  
  
 ZFC  
 Axiom Schema  
