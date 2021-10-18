@@ -76,3 +76,11 @@ Forward contracts are typically OTC products
 Future contracts are similiar to forward contracts but take place on an exchange. 
 
 A call option gives the holder a right to buy an underlying at a certain price for a certain, while a put option gives the holder the right to sell the underlying at a certain price and date. This is a right not a forced action.  
+
+Generally an option is worth more than its payoff up until a few moments before its expiration. 
+
+There is a product called the perpetual American option that has no expiration date but with this it is incredibly expensive and very difficult to price as they face a lot of uncertainty. Because of this it is not typically traded. 
+
+Due to many different expiration dates, there arises a liquidity fragmentation problem where market makers have to spread out there capital over these different dates, this leads to a complex system with different expirations having differing degrees of liquidity. 
+
+

@@ -36,3 +36,26 @@ Most popular protocols for swapping tokens use invariants. Invariants are algori
 
 - Iron Bank currently uses Chainlink oracle for its assets.
 
+
+### Everlasting Options
+
+long-tem options exposure without expense of rolling positions.
+
+a European options payoff can be calculated at any point not just expiration
+
+One of the prior uses cases for options is to hedge against risk, as options expire, the agent heding will eventually have to roll over there positions to a further date. 
+
+Spreads are a fee that market makers charge on trades, as they don't know who will trade with them or against them. 
+
+Spread is especially high for options making rolling over positions a costly feat. 
+
+
+Perpetual futures try to solve this problem giving future exposure as long as an agent may want it, while concentrating liquidity into unique for each asset. 
+
+Perps work by having those who went long on a given day, pay a funding fee to those who are short. This is calculated as the price of the perp - price of the underlying. Therefore it the perp is valued at a higher price than the underlying , it will be more expensive for those who go long and thus they would most likely sell lowering the perp price. 
+
+Everlasting options work a similar way to perpetual futures but for options, instead of the fee being mark-index, it is now mark-payoff. 
+
+The fee is calculated again daily, but can also be rewritten to work on an hourly system instead.
+
+Everlasting options are equiv to a constantly rolling options portfolio. 
