@@ -226,3 +226,134 @@ Test-driven development is a software development process that relies on the rep
 
 ### Overview
 ---
+- A test case consists of an input (data), an oracle and a comparator.  
+- Test inputs determine the behavior of the program. High coverage inputs can be generated automatically through path enumeration , path predicates, and mathematical constraint solving.
+- Test oracles correspond to what the program should do. Generating them is an expensive problem; it can be done automatically through invariants and mutation.  
+### Review
+---
+- Testing is very expensive  
+- Test suite quality metrics support informed comparisons between tests.  
+### Test inputs
+---
+- a test case has three components, the test input (data), the test oracle (expected output), and the comparator.
+- Often time test cases are "much match exactly" but other more general comparators, like known random output, precision limits, embedded dates are possible  
+- Examples of test inputs, are user input, GUI, environment variables, command line arguments, scheduler interleavings data from the filesystem, and data from the network.   
+- Some systems like unix treat everything as a file, every thing even keyboard commands boil down to some special file.
+- Programs interact with the outside world through system calls.  
+### Test Input Generation
+---
+-  We want to generate high quality tests, automatically.
+- Using test suite metrics to prefer some tests  
+- Statement coverage: visit every line  
+- Branch coverage: visit every -> true, -> false conditional
+- Path coverage: visit every path  
+- If we have N sequential if statements, we have 2N branch edges, but there are 2^N paths!!! Thus you would need 2^n tests to cover them Note that path coverage subsumes branch coverage.  
+- A path predicated is a boolean formula over program variables that is true when the program executes the given path.  
+- A satisfying assignment is a mapping from variables to values that make a predicate true.  
+- How do we produce satisfying assignments? Guess randomly. Ask Humans, or use an automated theorem prover.  
+- Input Generation plan: enumerator " all" paths in the method. For each path, collect the path predicate, for each path predicate, solve it. Note there could be infinite many paths in a solution thus be careful!
+### Oracles
+---
+- The oracle problem is the difficulty and cost of determining the correct test oracle. The problem is expensive both for humans and for machines.  
+- An implicit oracle is one associated with the language or architecture, rather than program-specific semantics.
+### Invariants
+- We can learn program invariants by running the program many times and noting what is always true of the output.  
+- An invariant is a predicate over program expressions that is true on every execution.  
+- An invariant or oracle captures human-intended correctness, there must be at least one line of code that ensures it. thus mutatnts in your program should be able to falsify the invariant.
+---
+Given a set of test cases and coverage information for each one, the test suite minimization problem is to find the minimal number of test cases that still have the max coverage.
+
+## Lecture 7 ~ Code Inspection and Review (1/31)
+---
+[Slides](https://web.eecs.umich.edu/~weimerw/481/lectures/se-07-codereview.pdf)
+### Overview
+---
+- In a code review, another develop examines your proposed change and explanation, offers feedback, and decides whether to accept it.  
+- A formal code inspection, a team of developers meets and examines existing code, following a process to understand it and spot issues.  
+- Both of these static quality assurance approaches have costs and benefits.  
+### Why not simply test?
+- Faults can mask other faults at runtime  
+- Only completed implementations can be tested  
+- Many quality attributes (security, compliance, maintainability), are hard to test  
+- Non-code artifacts cannot be tested.
+### What to Examine
+---
+- Code Inspection: Examine whole program, expensive if the program changes, good if a new concern arises.  
+- Code Review: Examine each change, inductive argument, bad if the definition of "good" changes.  
+- Pull requests let you tell others about changes you pushed to a repo, once a pull request is open, you can discuss and review the potential changes with collaborators and add follow up commits before the changes are merged into the repo.  
+- Other contributors can review your proposed changes, add review comments, contribute to the pull request discussion, and even add commits to the pull requests.
+
+### Code Review Goals
+- Finding defects, both low-level and high level issues  
+- Code improvement, readability, formatting, commenting, consistency.
+- Identifying alternative solutions  
+- Knowledge transfer  
+- Team awareness and transparency, lets others double check changes, and annouce changes to specific developers or the entire team.  
+- Shared code ownership, openness toward critique and changes.
+### Code Inspections
+- In a formal code inspection a group of developers meets to review code or other artifacts. This is viewed as the most effective approach to finding bugs.  
+- In a formal code inspection, there are typically 4-5 people, author, inspector, reader, scribe, and moderator.
+- First a moderator is chosen, followed by an overview brief where an author presents context in meeting, next a preparation period where every reviewer inspects the code separately.  Next a meeting to discuss the code, have reviewers identify issues, meeting only discover issues, do not discuss solution or whether it really is an issue, followed by rework and maybe a follow-up.  
+- What to look for: reminder of what to look for.  Author do not explain or defend the code, this isn't objective.  
+- Meetings should not include management.  
+- Do not use code reviews for HR evaluations. 
+### When to inspect
+- Inspect before milestones
+- Incremental inspections during development, earlier often better than later.  
+- Large code bases can be expensive and frustrating to review.  
+### Guidelines for inspections
+- Short meetings, not longer than 60 minutes.
+- Schedule fewer than 400 LOC for a 1h review session. 
+- Prep! More issues happen in the prep than the meeting itself. 
+### Concluding thoughts
+- Formal inspections are very expensive!
+- Passaround review is distributed, asychronous.  
+- Code reviews vs testing, code reviews are claimed to be more cost effective. 
+### Code Review by formaility
+- Ad hoc review  
+- Passaround (modern code reviews)  
+- Pair programming  
+- Walkthrough  
+- Inspection  
+See slide attached above to see when to use each.
+ ## Lecture 8 ~ Dynamic Analyses (2/2)
+---
+[Slides](https://web.eecs.umich.edu/~weimerw/481/lectures/se-08-dynamic.pdf)
+### Overview
+--- 
+- A dynamic analysis runs an instrumented program in a controlled manner to collect information which can be analyzed to learn about a property of interest.  
+- Computing test coverage is a dynamic analysis. 
+- Instrumentation can take the form of source code or binary rewriting.  
+- Dynamic analysis limitations include efficiency, false positives, and false negatives. 
+- May companies use dynamic analyses especially for hard to test bugs. 
+---
+- A race condition is the behavior of a system where the output is dependent on the sequence or timing of other uncontrollable events. In software, a race conditions occurs when two or more concurrent processes or threads access the same shared state without mutual exclusion and at least one of them writes to that state.    
+### Common Dynamic Analyses
+---
+- Run the program, in a systematic manner, on controlled inputs, monitor internal state at runtime, instrument the program, capture data to learn more then pass/fail. Analyze the results.
+- Instrumenting a program involves modifying or rewriting its source code or binary executable to change its behavior, typically to record additional information.
+- Note, compile time and run time are not the same. Compile tile is preparing the program to record information while run time is actually recording said information.  
+- Information flow tracking, sources are where sensitive information enters the program. Sinks are untrusted communication channels or sensitive computations.  
+### Components of a Dynamic Analysis
+---
+- Property of interest, what are you trying to learn about? why?
+- Information related to property of interest. How are you learning about that property.
+- Mechanism for collecting that information from a program execution, how are we instrumenting it?  
+- Test input data, what are you running the program on
+- Mechanism for learning about the property of interest from the information you collected.  
+- Example: Branch coverge is our test suite, and thus the property of interest, we care about what branch was exeucted, we let out a logging statement for each branch. In terms of learning from our collected data we use postprocess, discard duplicates, divide observed # by total.  
+### Parsing and pretty printing
+---
+- parsing turns program text into an intermediate representation, pretty printing does the reverse. 
+- Pretty printers are often written separately, visitors and pattern matchers exists in practice!  
+### Cost and Limits
+- Performance overhead for recording  
+- Computational effort for analysis  
+- Transparency limitations of instrumentation  
+- Accuracy? False Positives/ False negatives. 
+### Sound and Completeness
+- Sound Analyses, if report all defects then there is no false negatives.
+- Sound analyses typically overapproximate possible behavior.  
+- Are "conservative" with respect to saftey, when in doubt say it is unsafe.  
+- Complete analyses, every reported defect is an actual defect then no false positives
+- Complete analyses typically underapproximates possible behavior. 
