@@ -357,3 +357,41 @@ See slide attached above to see when to use each.
 - Are "conservative" with respect to saftey, when in doubt say it is unsafe.  
 - Complete analyses, every reported defect is an actual defect then no false positives
 - Complete analyses typically underapproximates possible behavior. 
+
+## Lecture 9 Pair Programming
+---
+[Slides](https://web.eecs.umich.edu/~weimerw/481/lectures/se-20-pairskill.pdf)
+---
+## Lecture 10-11 Static analysis
+---
+[Slides](https://web.eecs.umich.edu/~weimerw/481/lectures/se-10-bugreport.pdf)
+## Lecture 11 - Defect Reporting and Triage (2/12)
+---
+[Slides](https://web.eecs.umich.edu/~weimerw/481/lectures/se-10-bugreport.pdf)
+### Overview
+- A software defect report includes information and communication relate to addressing a software issue. Defects reports have many components.  
+- Defect reports are subject to triage based on severity and priority information.  
+- Defects reports have a lifecycle that is complicated and non-linear with multiple possible resolutions.  
+### Terminology
+- A fault is an exceptional situation at run time (trap, exception)  
+- A defect is any characteristic of a product which hinders its usability for its intended purpose.  (a bug is a static defect in the source code).  
+- A bug report provides information about a defect, created by testers, users, tools, etc. Often contains multiple types of information, often tracked in a database. 
+- A feature request is a potential change to the intended purpose of software  
+- AN issue is either a bug report  or a feature request.  
+- Defect report lifecycle consists of a number of possible stages and actions including reporting, confirmation, triage, assignment, resolution, and verifcation.  
+- The status of a defect report tracks its position in the lifecycle  
+### Examples
+- Bugzilla
+- github built in issue tracker
+### Bug Report Sources
+- Internal, (Devs, Testers, reports are usually detailed and sophisticated )
+- External (Beta testers, and end users), reports are usually more general.  
+### Bug Triage
+- Can be thought of as what bugs should be dealth with first.  
+- Medically,  triage is the assignment of degrees of urgency to wounds or illnesses to decide the order of treatment of a large number of patients or casualities.  
+- This is often due through cost-benefit analysis.  
+- Severity is the degree of impact that a defect has on the development or operation of a component or system.  
+- Defect priority indicates the importance or urgency of fixing a defect. 
+- Note Severity and Priority are often correlated but are officially independent , severity and priority are used together to evaluated prioritize and assign the resolution of reports.   
+- An assignment associates a developer with the responsibility of addressing a defect report, this is most often a manual process done by the 'owner' of the implicated code.  
+- A defect report resolution status indicates the result of the most recent attempt to address it.  
