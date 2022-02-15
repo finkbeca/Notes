@@ -357,6 +357,7 @@ See slide attached above to see when to use each.
 - Are "conservative" with respect to saftey, when in doubt say it is unsafe.  
 - Complete analyses, every reported defect is an actual defect then no false positives
 - Complete analyses typically underapproximates possible behavior. 
+<<<<<<< HEAD
  ## Lecture 9 ~ Par Programming (2/7)
 ---
 [Slides]()
@@ -450,6 +451,8 @@ The rules of 1-4 relate to the in and out of statements, In the following rules,
 - A value can change from false to true, but no the other way around.  
 - Each value can change ony once so termination is guaranteed.  
 - Once the analysis is computed, it is simple to issue a warning at a particular entry point for sensitive information.  
+=======
+
 ## Lecture 11 - Defect Reporting and Triage (2/12)
 ---
 [Slides](https://web.eecs.umich.edu/~weimerw/481/lectures/se-10-bugreport.pdf)
