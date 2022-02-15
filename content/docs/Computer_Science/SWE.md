@@ -360,7 +360,7 @@ See slide attached above to see when to use each.
 
 
 
-## Lecture 9 ~ Par Programming (2/7)
+## Lecture 9 ~ Pair Programming (2/7)
 ---
 [Slides](https://web.eecs.umich.edu/~weimerw/481/lectures/se-20-pairskill.pdf)
 
@@ -455,13 +455,6 @@ The rules of 1-4 relate to the in and out of statements, In the following rules,
 - A value can change from false to true, but no the other way around.  
 - Each value can change ony once so termination is guaranteed.  
 - Once the analysis is computed, it is simple to issue a warning at a particular entry point for sensitive information.  
-<<<<<<< HEAD
-=======
-=======
-
-
-
->>>>>>> c8a1ebd45b9c1382f2e156576921c2d4b0bcf6d1
 
 ## Lecture 11 - Defect Reporting and Triage (2/12)
 ---
