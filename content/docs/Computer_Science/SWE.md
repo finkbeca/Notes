@@ -358,9 +358,17 @@ See slide attached above to see when to use each.
 - Complete analyses, every reported defect is an actual defect then no false positives
 - Complete analyses typically underapproximates possible behavior. 
 <<<<<<< HEAD
+<<<<<<< HEAD
  ## Lecture 9 ~ Par Programming (2/7)
 ---
 [Slides]()
+=======
+
+
+## Lecture 9 ~ Par Programming (2/7)
+---
+[Slides](https://web.eecs.umich.edu/~weimerw/481/lectures/se-20-pairskill.pdf)
+>>>>>>> c8a1ebd45b9c1382f2e156576921c2d4b0bcf6d1
 ### Overview
 - There are many programming and development approaches for improving aspects of software development
 - Agile development focuses on reducing the cost to respond to requirement change  
@@ -394,7 +402,11 @@ See slide attached above to see when to use each.
 - What is a good fit? Can you write and test code? Can you communicate CS concepts, are you a nice person?  
  ## Lecture 10 ~ Static and Dataflow analysis (2/9)
 ---
+<<<<<<< HEAD
 [Slides](https://web.eecs.umich.edu/~weimerw/481/lectures/se-08-dynamic.pdf)
+=======
+[Slides](https://web.eecs.umich.edu/~weimerw/481/lectures/se-10-bugreport.pdf)
+>>>>>>> c8a1ebd45b9c1382f2e156576921c2d4b0bcf6d1
 ### Overview
 - Static analysis is the systematic examination of an abstraction of program state space with respect to a property. Static analyses reason about all possible executions but they are conservative.  
 - Dataflow analysis is a popular approach to static analysis. It tracks a few broad values rather than exact information. It can be computed in terms of a local transfer of information.  
@@ -451,7 +463,13 @@ The rules of 1-4 relate to the in and out of statements, In the following rules,
 - A value can change from false to true, but no the other way around.  
 - Each value can change ony once so termination is guaranteed.  
 - Once the analysis is computed, it is simple to issue a warning at a particular entry point for sensitive information.  
+<<<<<<< HEAD
 =======
+=======
+
+
+
+>>>>>>> c8a1ebd45b9c1382f2e156576921c2d4b0bcf6d1
 
 ## Lecture 11 - Defect Reporting and Triage (2/12)
 ---
