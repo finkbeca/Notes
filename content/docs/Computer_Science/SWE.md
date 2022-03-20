@@ -395,7 +395,7 @@ See slide attached above to see when to use each.
 - 1-2 Phone screens, follows by an interview (most likely technical), followed sometimes by additional phone interviews. This ends with an offer if all goes well and this process typically last 2 weeks to 1.5 months.  
 - Many companies avoid false positives at such a rate that they typically reject (false negatives) often.
 - What is a good fit? Can you write and test code? Can you communicate CS concepts, are you a nice person?  
- ## Lecture 10 ~ Static and Dataflow analysis (2/9)
+ ## Lecture 10-11 ~ Static and Dataflow analysis (2/9)
 ---
 [Slides](https://web.eecs.umich.edu/~weimerw/481/lectures/se-10-bugreport.pdf)
 
@@ -456,7 +456,7 @@ The rules of 1-4 relate to the in and out of statements, In the following rules,
 - Each value can change ony once so termination is guaranteed.  
 - Once the analysis is computed, it is simple to issue a warning at a particular entry point for sensitive information.  
 
-## Lecture 11 - Defect Reporting and Triage (2/12)
+## Lecture 12 - Defect Reporting and Triage (2/12)
 ---
 [Slides](https://web.eecs.umich.edu/~weimerw/481/lectures/se-10-bugreport.pdf)
 ### Overview
@@ -486,3 +486,160 @@ The rules of 1-4 relate to the in and out of statements, In the following rules,
 - Note Severity and Priority are often correlated but are officially independent , severity and priority are used together to evaluated prioritize and assign the resolution of reports.   
 - An assignment associates a developer with the responsibility of addressing a defect report, this is most often a manual process done by the 'owner' of the implicated code.  
 - A defect report resolution status indicates the result of the most recent attempt to address it.  
+
+## Lecture 13 - Fault Localization and Profiling
+--- 
+[Slides](https://web.eecs.umich.edu/~weimerw/481/lectures/se-11-faultloc.pdf)  
+###
+- Debugger helps to detect the source of a program error by single stepping through the program and inspecting variable values.  
+- Fault localization is the task of identifying lines implicated in a bug. Humans are better at localizing some types of bugs than others.  
+- Automatic tools can help with the dynamic analyses of fault localization and profiling  
+- Care must be taken when evaluating such tools for real-world use.  
+### Software Scaling  
+- Fault localization is the task of identifying source code regions implicated in a bug  
+- There are many places to fix a bug, might be looked upon by supsiciousness, eg a list.   
+### Debuggers
+- Can operate on source code or assembly code  
+- Inspect the values of registers, memory  
+- Key Features: Attach to process, single stepping, breakpoints, conditional breakpoints, watchpoints  
+### Signals
+- Signal is an asynchronous notification sent to a process about an event  
+- You can install a signal handler, a procedure that will be execute when the signal occurs.   
+- Attaching a debugger requires operating system support.  
+- There is a special system call that allows one process to act as a debugger for a target  
+### Building a debugger
+- A single step interactive command is equal to putting a breakpoint at the next instruction, resume execution...  
+- A watchpoint is like a breakpoint but stops execution after any instruction changes the value at L.  
+- Software and Hardware watchpoints implemented slightly different. (Both not optimal)  
+### Tools
+- A spectrum based fault localization tool uses a dynamic analysis to rank suspicious statements implicated in a fault by comparing the statements covered on failing tests to the statements covered on passing tests.  
+- Print-Statement debugging
+- A profile is a performance analysis tool that measures the frequency and duration of function calls as a program runs
+- A flat profile computes the average call times for functions but does not break times down based on context  
+- A call-graph profile computes call times for functions and also the call chains involved.  
+
+## Lecture 14 - Debugging as Hypothesis Testing
+--- 
+[Slides](https://web.eecs.umich.edu/~weimerw/481/lectures/se-12-debug.pdf)  
+###
+- Delta debugging is an automated debugging approach that finds a minimal interesting subset of a given set. It is very efficient.  
+- Delta Debugging is based on divide and conquer and relies heavily on critical assumptions and consistency.    
+- It can be used to find which code changes cause a bug to minimize failure inducing inputs and even to find harmful thread schedules.   
+### Delta Debugging
+- Problems: Simplifying failure inducing input, isolating failure inducing thread schedules, identifying failure inducing code changes.  
+- Difference is a change in the program configuration or state that lead to alternate observations  
+- Abstract Debugging problem: Find which part of something determines the failure, find the smallest subset of a given set that is still interesting, under some notion of "interesting" that is monotonic, unambiguous and consistent. 
+- If a single changes induces the failure, DD is logarithmic in time, elsewise it is linear. 
+- Reference slide deck above for more information.  
+
+## Lecture 15 - Requirements and Specification
+--- 
+[Slides](https://web.eecs.umich.edu/~weimerw/481/lectures/se-13-req.pdf)  
+###
+- Requirements articulate the relationship and interface between a desired system and its environment. This includes both what is and what should be.  
+- We distinguish between functional and quality requirements. Both should be stated in measurable ways.    
+- Requirements can describe variables, inputs, outputs, and assumptions between them.    
+- We distinguish between informal statements and verifiable requirements.  
+###
+- Requirements say what the system will do, not how it will do it.  
+- System requirements: relationships between monitored and controlled variables.  
+- Software requirements: relationship between inputs and outputs.  
+Domain properties and assumptions state relationships between those.  
+- Requirements describe what is observable at the environment machine interface. 
+- Indicative mood describes the environment (as-is)  
+- Optative mood to describe the environment with the machine.  
+### Functional Requirements
+- Functional requirements describe what the machine should do, input, output, interface, response to events.   
+- Completeness: All requirements are documented.  
+- Consistency: No conflicts between requirements.  
+- Precision: No ambiguity in requirements.  
+- Think of quality requirements as a design criteria to help choose between alternative implementations.  
+- An informal goal is a general intention  
+- A verifiable non-functional requirement is a statement using some measure that can be objectively tested. 
+### Requirements Engineering  
+- Knowledge acquisition: how to capture relevant detail about a system.  
+- Knowledge representation: once capture how do we express it most effectively. 
+
+## Lecture 16 - Requirements Validation and Risk
+--- 
+[Slides](https://web.eecs.umich.edu/~weimerw/481/lectures/se-13-req.pdf)  
+###
+- Requirements elicitation relies on communication with stakeholders. This includes identifying relevant parties, understanding the domain, interviews, and the exploration of alternatives.  
+- Validation checks the correctness of requirements; verification checks the correctness of software.  
+- Risk includes both the likelihood and the consequences of failure. 
+### Requirement Elicitation
+- Requirements elicitation is the process of identifying system requirements through communication with stakeholders, Step 1 identify stakeholders, 2. understand the domain, 3. discover the real needs.   
+- A stakeholder is any person or group who will be affected by the system directly or indirectly.  
+- Content analysis involves learning about the system domain. 
+- Discover real needs via Interviews, conduct an interview, structure or unstructured, individual or group. 
+### Inconsistencies
+- Terminology clash same concept named differently
+- Designation clash: same name for different concepts in different statements  
+- Structure clash: same concept structured differently in different statements.  
+- In a strong conflict statements are not satisfiable together  
+- In a weak conflict statements are not satisfiable together under some boundary condition.  
+- Alternative solutions and tradeoffs are typically presented via prototypes, mockups, and storyboards.  
+### Verification and Validation  
+- Validation is the task of determining if the requirements are correct.  
+- Verification is the task of determining if the software is correct.  
+- We recursively decompose a system, from the highest level of abstraction into lower-levels subsystems and implementation chocies.  
+### Risk
+- Risk = Likelihood \cdot Impact  
+- Fault tree analysis is a top down technique to model, reason about, and analyze risk. A fault tree analysis decomposes a particular type of failure. 
+## Lecture 17 - Design for Maintainability
+--- 
+[Slides](https://web.eecs.umich.edu/~weimerw/481/lectures/se-17-designmaint.pdf)  
+###
+- Invest up front effort into designing software to facilitate maintenance activities. Reduces overall lifecycle costs. 
+- Designing to improve comprehension, documentation, change, reuse, and testability. 
+- The metrics used for understandability, the category of information conveyed by documentation, object oriented principles and design patterns.   
+### Investment
+- To invest is to allocated money in the expectation of some benefit in the future. 
+- Investment is maintenance.  
+- Readability is a human judgement of how easy a text is to read. 
+### Descriptive vs Prescriptive  
+- Descriptive modeling is a mathematical process that describes real-world events and the relationships between factors correlated with them.  
+- Prescriptive model evaluates alternative solutions to answer the question according to an assumption or standard. 
+- You should focus on adding why information to your documentation, comments, and commits. There is tool and process support for adding and recovering what information.  
+### Design for change
+- Many fundamental tenets of object oriented design facilitate subsequent change. 
+- Classes are open for extension and modification.  
+- Subtype polymorphism enables changes behind interfaces.  
+- Classes encapsulate details likely to change behind stable interfaces.  
+- Internal parts can be developed independently  
+- Delegation is when one object relies on another object for some subset of its functionality.  
+- A software design pattern is a general reusable solution to a commonly occurring problem within a given context. 
+### Design Patterns
+- Strategy Design Pattern.  
+- Template Method 
+- Template method uses inheritance + an overridable method, strategy uses an interface and polymorphism.  
+### Design for Extensibility 
+- Design by contract prescribes that software designers should define formal precise and verifiable interface specification for components.  
+
+## Lecture 18 - Patterns and Anti-Patterns
+--- 
+[Slides](https://web.eecs.umich.edu/~weimerw/481/lectures/se-17-designmaint.pdf)  
+###
+- Software Design patterns are general reusable solutions to commonly occurring problems. They separate the structure of a system from its implementation. 
+- Every design has tradeoffs no is perfect. 
+- Gang of 4 = Design Patterns Elements of Reusable object-oriented software. 
+### High Level Design Pattern Advice
+- Consider Code changes as a certainity  
+- Consider your requirements and their changes.  
+- Consider multiple designs  
+### Structural Patterns
+- Structural design patterns ease design by identifying simple ways to realize relationships among entities.  
+- Adapter design pattern is a structural design pattern that converts the interface of a class into another interface clients expect
+- Composite design pattern allows clients to treat individual objects and groups of objects uniformly
+- THe proxy design pattern provides a surrogate or placeholder for another object to control access to it.
+### Creational Design Patterns
+- Creational design patterns avoid complexity by controlling object creation so that objects are created in a manner suitable for the situation. 
+- Named constructor idiom, you declare the class's normal constructors to be private or protected and make a public static creation method.   
+- The factory method pattern is a creational design patter that uses factory methods to create objects without having the return type reveal the exact subclass.   
+- Anti-pattern is a common response to a recurring problem that is usally ineffective and risk being counterproductive. 
+- Singleton pattern restricts the instantiation of a class to exactly one logical instance. 
+### Behavioral Design Patterns
+- Behavioral design patterns support common communication patterns among objects. They are concerned with algorithms and the assignment of responsibilities.  
+- Iterator pattern is a common behavioral design pattern, it provides a uniform interface for traversing containers. 
+- Observer pattern allows depdent objects to be notified automatically when the state of a subject changes. 
+- Template method design involves a method in a superclass that operates in terms of high level steps that are implemented by abstract helper methods provided by concrete implementations. 
