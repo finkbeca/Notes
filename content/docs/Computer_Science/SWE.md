@@ -618,7 +618,7 @@ Domain properties and assumptions state relationships between those.
 
 ## Lecture 18 - Patterns and Anti-Patterns
 --- 
-[Slides](https://web.eecs.umich.edu/~weimerw/481/lectures/se-17-designmaint.pdf)  
+[Slides](https://web.eecs.umich.edu/~weimerw/481/lectures/se-16-patterns.pdf)  
 ###
 - Software Design patterns are general reusable solutions to commonly occurring problems. They separate the structure of a system from its implementation. 
 - Every design has tradeoffs no is perfect. 
@@ -643,3 +643,65 @@ Domain properties and assumptions state relationships between those.
 - Iterator pattern is a common behavioral design pattern, it provides a uniform interface for traversing containers. 
 - Observer pattern allows depdent objects to be notified automatically when the state of a subject changes. 
 - Template method design involves a method in a superclass that operates in terms of high level steps that are implemented by abstract helper methods provided by concrete implementations. 
+
+## Lecture 18 - Multi-Language Projects
+--- 
+[Slides](https://web.eecs.umich.edu/~weimerw/481/lectures/se-23-multilang.pdf)  
+###
+- Many modern projects involve code in many languages  
+- Native code interfaces can be understood in terms of data layout and special common functions to manipulate managed data.
+- Almost all aspects of modern SWE is multi-language!  
+### Traditional Multi-Language Projects (MuL)
+- Application kernel  
+- Scripts  
+- Retro64 Minecraft Mod
+- Common language runtime
+### Disadvantages of MuL Projects
+- Integrating data and control flow across languages can be difficult
+- Debugging can be hard  
+- Build process becomes more complicated. 
+- Developer expertise in multiple languages.
+### Python
+-Most Objects in python are just dictionaries.
+- Different then C++ and Java
+### Programming Paradigms
+- Pass a string or an integer as a second argument ideal works well for dynamic languages like python as well as functional languages, but not for OO languages. 
+### Cross-Cutting Implications for SWE
+- Hiriing and Expertise, you need developers with experience working with both languages together, per language experince may not be equal to this.  
+- Code Inspection and Review, our traditional style of code inspection and review does not hold under MuL projects.  
+- Design: designng the interface for cross-language is extremely error prone, and planning is necessary. 
+- Design patterns can help!  
+- Readability, the "glue" code is incredibly hard to decipher without familiarity, and thus special care needs to be used in formatting and making sure any code is written well.  
+- Test input generation (most tools do not support test input generation across MuL projects)  
+- Test coverage, outside of giant ecosystems coverage tools do NOT span languages.  
+- Mutation analysis: Mutation tools are typically language specific.  
+- Debugger tools can almost never help with Mul projects.
+- Pick one language and debug within  
+- Static analysis: Unless the tool supports both languages, it will only report tools in one language even if it is a MuL project.
+- Why use MuL projects? If you want to mainly use a high level programming language for ease of reading and usability while taking advantage at some point of low level aspects of a kernel.
+## Lecture 19 - Code Inspection and the brain
+--- 
+[Slides](https://web.eecs.umich.edu/~weimerw/481/lectures/se-18-brain.pdf)  
+###
+- We can investigate neural correlations in SWE using medical imaging.  
+- Top-down comprehension based on semantic cues is more efficient than bottom up comprehension   
+- Neural representation and natural languages are distinct. Classifiers can distinguish them based solely on brain activity. 
+### Code Review and Comprehension
+- Developers spend more time understanding and comprehending code than any other activity.  
+- Code review is a defacto standard.   
+- Technology transfer involves turning a research idea into an effective product that is actually used.  
+### FMRI
+- FMRI is a non invasive technique for probing neubiological substrates of various functions and measuring the (blood oxygen level depedent ) 
+- This magnetic difference between oxygen rich and poor blood can be detected by a magnetic resonance scanner. 
+### Models of Code Comprehension
+- Top down comprehension: refers to cognitive process in which experience and expectation and semantic cues guide the understanding of the code.  
+- Bottom up comprehension refers to cognitive processes in which meaning is obtained from every individual statement and then synthesized into a holistic understanding.  
+- Neural effciency is the phenomenon where lower brain activation indicates that a cognitive process is more efficeint and thus seem as easier. 
+
+### Study Results
+- Comprehension based on semantic cues requires less cognitive effort than bottom up comprehension.  
+- Program comprehension based on semantic cues is very efficient.  
+## Lecture 20 - Productivity
+--- 
+[Slides](https://web.eecs.umich.edu/~weimerw/481/lectures/se-19-productive.pdf)  
+###
