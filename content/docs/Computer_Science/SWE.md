@@ -705,3 +705,82 @@ Domain properties and assumptions state relationships between those.
 --- 
 [Slides](https://web.eecs.umich.edu/~weimerw/481/lectures/se-19-productive.pdf)  
 ###
+- Humans demonstrate different levels of expertise at programming tasks.
+- We consider a number of hypothesis for why.  
+- Organizations can provide hardware support. Individuals can practice abstractions and decompositions. 
+### Rapid Response time
+- The traditional model of a person thinking after each system response appears to be inaccurate. People have a sequence of actions in mind, contained in a short mental buffer.  
+- A experienced engineer working with sub second response was as productive as an expert with slower response. A novice performance became as good as the experienced professional and productivity of an expert was dramatically enhanced.
+### Programming Performance
+- A significant performance factor is associated with faster coding / debugging time, less CPU time, and use the of a high order language.
+- There is no correlation between grades and test scores in university and performance in the workplace.
+- Substantial savings can be effected by successfully detecting low performers.
+- From the Mythical Man we know on average 3 lines of code were added today, however on 10 lines can be added given a high order language like Python. (High order languages are effectively more efficient. ) This is otherwise known as language invariance.  
+### Problem solving 
+- They way experts vs novices solve problems tend to differ greatly besides more obvious differences like the number of commits made with errors.  
+- Problem solving tend to be different between novices and experts, where expert are more dependent on surface features, whereas experts focus more on underlying principles.  
+- With learning there is a gradual shift in organization of knowledge. From centering on physical components to one where there is a combined reliance on physical components, and physical laws, and finally one unrelated to any physical components.   
+
+## Lecture 21 - Automated Program Repair
+--- 
+[Slides](https://web.eecs.umich.edu/~weimerw/481/lectures/se-24-repair.pdf)  
+### Bug Bounties
+- If you trust your triage and code review, anyone can submit a candidate bug report (often time incentivize monetarily)  
+- Bug bounties combine defect reporting and triage with pass-around code review.  
+- With the high cost of QA paying for bug bounties is a very economical way to handle bug fixing. 
+### Automatic Bug Repair
+- Given a program and evidence of a bug, we can create a pull request that fixes a given bug!  
+- How would this work? Fault localization can be used to minimize the area of the problem, this can typically be done within a range of 10-100 lines. Furthermore we can use mutation testing to generate a candidate from simple edits. We can then use regression testing and continuous integration to assess the quality this change.    
+- Delta Debugging can be used to find a passing 1-minimal edit subset when minimizing edits.  
+- The main cost of automated program repair is running tests, you should use test suite prioritization and minimizing the tests to reduce this. Furthermore, stop evaluating as soon as a single tests fail.  
+- Static analysis can be used to decide if two programs are approximately equivalent. 
+- Mutation testing typically takes a program that passes all of its test suite, and requires that mutants based on human mistakes from the entire program fail some test. In contrast, a program repair that a failing program and requires one mutant that repairs (passes all the test), where the mutant is located in the lines of code found via fault localization.  
+- Dynamic analysis can be used to detect concurrency bugs.  
+- Automated test repair is relatively cheap compared to human developers, a useful tool for simple bugs, leaving complex/creative fixes for human developers.  
+
+## Lecture 22 - Product Management
+--- 
+[Slides](https://web.eecs.umich.edu/~weimerw/481/lectures/shultz-pm.pdf)  
+### Being a PM
+- Product Manger/ Program Manager/ Project Managers. Subtly different but generally the same.   
+- "PM are the voice of the customer for product development", "PMs make sure companies build the right things, and SWE make sure these things are built right".  
+- "PM's help understand and prototype"  
+- Often ambiguous, and generally lack control over the product, they must influence without authority.  
+### What does it take to a be a good PM
+- Ship the improvement
+- Show a tangigble difference in an important metric
+- get promoted
+- think up and implement diagnostics to prevent support cases  
+- see support case result time for common issues go down  
+- Relates to elicitation, validation, and risk. (Talking with customers, and making sure you understand the root of their pain)
+- Relates to system design, mapping users needs into a technical design. 
+- How to communicate: Communicate yours needs as directly as possible, put your best foot forward, work earnestly to under other person's problems, escalate tell other people in authority what problems your face.
+- If a sitaution is bad you don't have to try and resolve it.   
+## Lecture 23 - Program Synthesis
+[Slides](https://web.eecs.umich.edu/~weimerw/481/lectures/se-program-synthesis.pdf)  
+###
+- Flash fill is one of the prime examples of program synthesis. 
+- Flash fill has an underlying programming language. It is known as a domain specific language, a language specialized to some application domain.   
+- As a DSL it can only perform computations in this language, it cannot synthesize programs that are not expressible in its underlying language. 
+- Program synthesis is the process of taking some high level intent and translating it into some lower level code. 
+- Program synthesis is not the same as a ML model, how we think about programs are very different, what they are trying to correlate is also different.  
+- Likewise compilers are not the same as program synthesis. 
+- Synthesis is part of a SDP, scalability will improve, looking to the future, we care more about making these synthesizers usable, and building out the interface to communicate with. 
+--- 
+## Lecture 24 - World Building
+[Slides](https://web.eecs.umich.edu/~weimerw/481/lectures/weimer-worldbuilding.pdf)  
+###
+- World building is the process of constructing an imaginary world. 
+- In addition to aesthetics, we can use GNS theory, and psychographic profiles as lenses to examine user desires.   
+- Give our desires, we can allocate resources to world building as well as mechanics and dynamics. 
+- World building is not a Genre.  
+- World building is the process of constructing an imaginary world. 
+- world build is used to make developers and players happy.  
+- GNS explains interactions through 3 mains catergories: gamists, narrativists, and simulationists. 
+- Psychographic profiles, jonhnny make mechanics creative for self expression, timmy experience big dynamics, spike wants to win, vorthos wants to expereince the creative and flavor of the project.  
+- World building can be considered both top-down or bottom up. Requires requirement elicitation just like SWE. 
+- Careful balance is needed to between too much world building, and massive plot holes, furthermore world building is not everything other mechanics need to be built out too. 
+- Can be thought of building out a process for creative works, design, and development. 
+--- 
+
+
