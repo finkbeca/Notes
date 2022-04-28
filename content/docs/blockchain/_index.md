@@ -97,7 +97,7 @@ Developer Links for BSV
 [Money Button](https://github.com/moneybutton/bsv) - Developer tools    
 [Money Button](https://www.moneybutton.com/)  
 [Scrypt](https://github.com/scrypt-sv/bsv)  
-[Uniwriter](https://coingeek.com/unwriter-unveils-bitpic-for-bitcoin-sv-blockchain/) - BSV Developer  
+ 
 
 
 ## Misc
