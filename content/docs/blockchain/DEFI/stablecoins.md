@@ -8,7 +8,7 @@ bookToc: true
 
 ## CPI StableCoins
 
-- CPI measure the price cahnce across a wide section of the economy in an attempt to accurately mesure inflation. The purchasing power of the dollar declined by 7.5% from January 2021 to 2022. pegging a stablecoin’s value to CPI, will allow purchasing power to stay the same, thus one VOLT will go from $1 to $1.075 over 1 year under current CPI.
+- CPI measure the price chance across a wide section of the economy in an attempt to accurately measure inflation. The purchasing power of the dollar declined by 7.5% from January 2021 to 2022. pegging a stablecoin’s value to CPI, will allow purchasing power to stay the same, thus one VOLT will go from $1 to $1.075 over 1 year under current CPI.
 - Volt will use a Chainlink Oracle to obtain official CPI data.  
 - Frax will use this same oracle.  
 - What does a crypto native CPI standard look like?  
