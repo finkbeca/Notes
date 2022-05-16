@@ -31,6 +31,7 @@ Reserach Databases of published papers:
 [Building Smart Contracts on AAVE](https://www.chainshot.com/learn/aave)  
 [Mechanism Capital Research Articles](https://www.mechanism.capital/)
 [Femboy Capital MEV Summary](https://femboy.capital/SummitSummaryPt1)
+[Foundry Book](https://book.getfoundry.sh/anvil/index.html)  
 ***GSN***
 Uses metatransactions (collect calls) to minimize onboarding and for UX friction. It takes away the need for clients to have to have gas to pay for transaction fees. 
   
