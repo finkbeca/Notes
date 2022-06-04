@@ -11,7 +11,8 @@ bookToc: true
 [AAVE Credit Delegation](https://docs.aave.com/developers/v/1.0/developing-on-aave/the-protocol/credit-delegation ) 
 [AAVE Lending pool Contract](https://docs.aave.com/developers/the-core-protocol/lendingpool )
 [Credit Delegation ShowCase AAVE](https://showcase.ethglobal.co/marketmake/aave-credit-delegation)
-
+[RMM Primitive ](https://primitive.mirror.xyz/Audtl29HY_rnhN4E2LwnP7-zjDcDGAyXZ4h3QpDeajg)  
+[Sherlock  (Protocol Triage Support)](https://www.sherlock.xyz/)
 ## Notes
 Most popular protocols for swapping tokens use invariants. Invariants are algorithms for alp that express the relation between reserve of two distinct assets. 
 - YieldSpace's [whitepaper](https://yield.is/YieldSpace.pdf) has a great section on invariants used for each protocol. 
