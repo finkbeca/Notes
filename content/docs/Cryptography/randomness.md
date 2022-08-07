@@ -18,6 +18,7 @@ Uses:
 - Monte Carlo method
 - Cryptography
 - Gaming
+- Hardware Proccesses
 
 It is still a central topic if there is a reasonable and notable difference between a truly random number generator and a PRNG.
 

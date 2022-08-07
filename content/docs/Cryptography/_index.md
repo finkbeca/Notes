@@ -41,3 +41,4 @@ math: true
 - Alternatively we can define perfect secrecy as {{<katex>}}Pr[Enc_k(m) = c] = Pr[Enc_k(m') = c] {{</katex>}}. Therefore a encyrption scheme (Gen,Enc, Dec) with message space M is perfectly secret iff this holds for all {{<katex>}} m, m' \in M{{</katex>}}  and every c. 
 
 - We define Adversarial indistinguishably as that given to messages that an adversary can not guess with more than 1/2 chance which message was encrypted, given a cipher text. 
+
